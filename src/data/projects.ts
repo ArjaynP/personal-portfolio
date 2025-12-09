@@ -1,0 +1,153 @@
+export type ProjectLink = {
+  label: string;
+  href: string;
+};
+
+export type Project = {
+  slug: string;
+  title: string;
+  tagline: string;
+  description: string;
+  tech: string[];
+  challenges: string[];
+  contributions: string[];
+  links: ProjectLink[];
+  featured: boolean;
+  problem: string;
+  overview: string;
+  architecture: string;
+  screenshots: string[];
+  learnings: string[];
+  improvements: string[];
+  year: string;
+};
+
+export const projects: Project[] = [
+  {
+    slug: "neuratrail",
+    title: "NeuraTrail MLOps",
+    tagline: "Streaming anomaly detection with human-in-the-loop review",
+    description:
+      "Built an end-to-end pipeline for telemetry anomaly detection with online inference, feedback loops, and red-team style evaluation.",
+    tech: ["Next.js", "TypeScript", "Python", "FastAPI", "Kafka", "TensorFlow", "PostgreSQL"],
+    challenges: [
+      "Kept latency under 120ms p95 while running on GPUs shared across models",
+      "Balanced precision/recall by routing edge cases to a reviewer queue",
+      "Created a reproducible evaluation harness with shadow deployments",
+    ],
+    contributions: [
+      "Implemented drift-aware feature store and online inference service",
+      "Designed reviewer dashboard with prioritized queues and auditability",
+      "Automated model rollout with canary + rollback signals tied to business KPIs",
+    ],
+    links: [
+      { label: "GitHub", href: "https://github.com/ArjaynP/neuratrail" },
+      { label: "Live Demo", href: "https://demo.example.com/neuratrail" },
+      { label: "Devpost", href: "https://devpost.com/software/neuratrail" },
+      { label: "Poster", href: "https://example.com/neuratrail/poster" },
+      { label: "YouTube", href: "https://youtube.com/watch?v=neuratrail" },
+    ],
+    featured: true,
+    problem:
+      "Product teams struggled to trust anomaly alerts because models drifted and dashboards lacked context. False positives were noisy and true positives arrived too late for on-call responders.",
+    overview:
+      "NeuraTrail ingests telemetry streams, enriches events with domain features, scores anomalies in real-time, and routes uncertain cases to a reviewer queue. Feedback fine-tunes thresholds and retraining recipes.",
+    architecture:
+      "Edge collectors push to Kafka. A FastAPI service batches events to a TensorFlow model served behind Triton. Scores and metadata land in PostgreSQL for analytics. A Next.js dashboard visualizes incidents and reviewer actions.",
+    screenshots: [
+      "/projects/neuratrail-thumb.svg",
+      "/architecture-template.svg",
+    ],
+    learnings: [
+      "Feature freshness matters more than model complexity for on-call usefulness",
+      "Human-in-the-loop UI needs frictionless keyboard shortcuts to keep reviewers fast",
+    ],
+    improvements: [
+      "Add RLHF-style ranking of incidents to tighten reviewer priors",
+      "Ship lightweight on-device detectors for edge-only deployments",
+    ],
+    year: "2025",
+  },
+  {
+    slug: "visionedge",
+    title: "VisionEdge",
+    tagline: "Vision transformer pipeline for production CV",
+    description:
+      "Productionized a vision transformer pipeline with active learning, on-the-fly augmentations, and GPU-aware batching across microservices.",
+    tech: ["Next.js", "TypeScript", "PyTorch", "CUDA", "Redis", "gRPC", "Terraform"],
+    challenges: [
+      "Kept throughput >250 FPS with dynamic batching and GPU utilization >80%",
+      "Reduced label noise via active learning and model disagreement scores",
+      "Hardened CI/CD with golden datasets and visual regression diffs",
+    ],
+    contributions: [
+      "Built data selection service that surfaces highest value frames per sprint",
+      "Instrumented per-stage latency and GPU metrics with Grafana dashboards",
+      "Created a reviewer UI for bounding boxes and class hints with auto-complete",
+    ],
+    links: [
+      { label: "GitHub", href: "https://github.com/ArjaynP/visionedge" },
+      { label: "Live Demo", href: "https://demo.example.com/visionedge" },
+      { label: "Paper", href: "https://example.com/visionedge/paper" },
+      { label: "YouTube", href: "https://youtube.com/watch?v=visionedge" },
+    ],
+    featured: true,
+    problem:
+      "Ops teams needed a reliable way to spot visual defects at scale but existing models struggled with domain shift and shaky labels.",
+    overview:
+      "VisionEdge stitches together ingest, selection, training, and serving. It uses disagreement-based active learning to request fresh labels and keeps deployment predictable with shadow evals.",
+    architecture:
+      "Frames land in S3; metadata in Redis. A PyTorch inference service exposes gRPC, fronted by a load balancer. Next.js renders dashboards for model health and labeling queues.",
+    screenshots: ["/projects/visionedge-thumb.svg", "/architecture-template.svg"],
+    learnings: [
+      "GPU-aware batching beats naive autoscaling for latency/throughput targets",
+      "Disagreement sampling surfaces edge cases faster than entropy alone",
+    ],
+    improvements: [
+      "Add synthetic data generation for rare classes",
+      "Introduce lightweight mobile inference for offline sites",
+    ],
+    year: "2024",
+  },
+  {
+    slug: "llm-ops-platform",
+    title: "LLM Ops Platform",
+    tagline: "Evaluation-first platform for grounded LLM features",
+    description:
+      "Built an evaluation harness, prompt registry, and guardrails for production LLM features with automatic regression detection.",
+    tech: ["Next.js", "TypeScript", "Node.js", "OpenAI", "Pinecone", "Prisma", "PostgreSQL"],
+    challenges: [
+      "Detect regressions caused by prompt drift and upstream schema changes",
+      "Provide deterministic replay of conversations with feature flags",
+      "Balance latency vs. grounding quality with retriever fallbacks",
+    ],
+    contributions: [
+      "Implemented eval suites covering hallucinations, safety, and factuality",
+      "Designed prompt versioning + approvals, tied to feature flags",
+      "Built dashboards for latency, cost, and retrieval depth per feature",
+    ],
+    links: [
+      { label: "GitHub", href: "https://github.com/ArjaynP/llm-ops-platform" },
+      { label: "Live Demo", href: "https://demo.example.com/llm-ops" },
+      { label: "Paper", href: "https://example.com/llmops/paper" },
+      { label: "YouTube", href: "https://youtube.com/watch?v=llmops" },
+    ],
+    featured: true,
+    problem:
+      "Product teams needed confidence shipping LLM features but lacked evals tied to real user journeys and cost visibility.",
+    overview:
+      "The platform centralizes prompt versions, retrieval configs, and eval results. It triggers guardrails and fallbacks on policy violations and keeps product owners in the loop with dashboards.",
+    architecture:
+      "User inputs flow through a retriever backed by Pinecone, then prompts a hosted LLM with guardrail hooks. Results and costs are logged to PostgreSQL; dashboards live in Next.js.",
+    screenshots: ["/projects/llmops-thumb.svg", "/architecture-template.svg"],
+    learnings: [
+      "Eval coverage prevents silent regressions when prompts evolve",
+      "Grounding depth and latency need per-feature SLAs with budgets",
+    ],
+    improvements: [
+      "Add cost-aware routing between providers",
+      "Introduce human eval sampling with weekly review",
+    ],
+    year: "2025",
+  },
+];

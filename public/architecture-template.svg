@@ -1,0 +1,28 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="700" rx="32" fill="#0B1224"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0EA5E9" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="1168" height="668" rx="28" fill="url(#bg)" stroke="#1E293B" stroke-width="2" stroke-dasharray="10 12"/>
+  <g stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="120" y="160" width="220" height="120" rx="18" fill="#0F172A"/>
+    <rect x="120" y="360" width="220" height="120" rx="18" fill="#0F172A"/>
+    <rect x="490" y="260" width="220" height="120" rx="18" fill="#0F172A"/>
+    <rect x="850" y="160" width="220" height="120" rx="18" fill="#0F172A"/>
+    <rect x="850" y="360" width="220" height="120" rx="18" fill="#0F172A"/>
+    <line x1="340" y1="220" x2="490" y2="320" />
+    <line x1="340" y1="420" x2="490" y2="320" />
+    <line x1="710" y1="320" x2="850" y2="220" />
+    <line x1="710" y1="320" x2="850" y2="420" />
+  </g>
+  <g fill="#E2E8F0" font-family="'Inter', 'Helvetica', 'Arial', sans-serif" font-weight="600">
+    <text x="230" y="225" text-anchor="middle">Ingest</text>
+    <text x="230" y="425" text-anchor="middle">Features</text>
+    <text x="600" y="325" text-anchor="middle">Model / API</text>
+    <text x="960" y="225" text-anchor="middle">UI</text>
+    <text x="960" y="425" text-anchor="middle">Analytics</text>
+  </g>
+</svg>

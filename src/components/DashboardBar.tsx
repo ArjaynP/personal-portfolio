@@ -1,10 +1,10 @@
 import { personalProfile } from "@/data/personal";
 
 const dashboardStats = [
-  { label: "Focus", value: "AI/ML Systems" },
+  { label: "Focus", value: "AI/ML" },
   { label: "Availability", value: personalProfile.availability },
   { label: "Location", value: personalProfile.location },
-  { label: "Primary Stack", value: "TypeScript • Python" },
+  { label: "Primary Stack", value: "Python • TypeScript" },
 ];
 
 export function DashboardBar() {

@@ -9,22 +9,23 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    role: "Senior AI/ML Engineer",
-    company: "Stealth Health AI",
-    timeframe: "2023 — Present",
+    role: "AI/ML & Computer Vision Researcher | Full-Stack Developer",
+    company: "EMRC Lab",
+    timeframe: "Nov 2025 — Present",
     summary:
-      "Leading ML platform work across detection, observability, and privacy-safe data pipelines for clinical deployments.",
+      "Developing a full-stack application that details the lab, as well as a private portal for lab employees to book equipment",
     highlights: [
-      "Productionized foundation-model fine-tuning with safety guardrails and eval coverage",
-      "Cut model feedback latency from hours to minutes with streaming inference",
-      "Partnered with clinicians to design reviewer workflows and dashboards",
+      "Built a full-stack internal platform (React, Node.js, Express, SQL/NoSQL) for equipment booking, tracking, and administration",
+      "Developed features such as real-time availability, metadata storage, booking history, and tutorial video integration",
+      "Created an admin dashboard to monitor equipment location, status, and user activity",
+      "Conducting AI/ML research in computer vision and image processing; working with SLAM, ROS, and Gazebo for robotics and mobility modeling"
     ],
-    tech: ["PyTorch", "Next.js", "TypeScript", "Airflow", "PostgreSQL"],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "ROS"],
   },
   {
-    role: "Software Engineer, ML Platform",
-    company: "Cloudscale",
-    timeframe: "2021 — 2023",
+    role: "Software Engineer",
+    company: "Western Baja Racing",
+    timeframe: "Sept 2025 — Present",
     summary:
       "Built infra that balanced experimentation speed with reliability for product teams shipping ML features.",
     highlights: [
@@ -32,12 +33,12 @@ export const experiences: Experience[] = [
       "Introduced golden datasets + replay to prevent regressions",
       "Mentored engineers on production ML best practices",
     ],
-    tech: ["Go", "Kubernetes", "Kafka", "gRPC", "React"],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Docker", "SQL"],
   },
   {
-    role: "ML Engineer",
-    company: "Open Analytics Lab",
-    timeframe: "2019 — 2021",
+    role: "Software Engineer",
+    company: "Western Formula Racing",
+    timeframe: "Sept 2025 — Present",
     summary:
       "Prototyped and delivered CV + NLP features for enterprise customers.",
     highlights: [
@@ -45,6 +46,6 @@ export const experiences: Experience[] = [
       "Owned data labeling pipeline and vendor QA",
       "Collaborated with PMs to translate research into shipped features",
     ],
-    tech: ["Python", "TensorFlow", "Docker", "Redis", "FastAPI"],
+    tech: ["C++", "Python", "MongoDB"],
   },
 ];

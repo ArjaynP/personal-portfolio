@@ -28,7 +28,7 @@ export function NavBar() {
         </nav>
         <div className="flex items-center gap-3 text-sm">
           <Link
-            href={personalProfile.resume}
+            href={personalProfile.resume} target="_blank" rel="noopener noreferrer"
             className="rounded-full border border-white/15 px-4 py-2 font-semibold transition hover:-translate-y-0.5 hover:border-teal-300 hover:text-teal-200"
           >
             Resume

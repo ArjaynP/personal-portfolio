@@ -25,25 +25,24 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "neuratrail",
-    title: "NeuraTrail MLOps",
-    tagline: "Streaming anomaly detection with human-in-the-loop review",
+    title: "Gov AI",
+    tagline: "Decentralized Polling System using Blockchain Technology Solana",
     description:
-      "Built an end-to-end pipeline for telemetry anomaly detection with online inference, feedback loops, and red-team style evaluation.",
-    tech: ["Next.js", "TypeScript", "Python", "FastAPI", "Kafka", "TensorFlow", "PostgreSQL"],
+      "Developed a decentralized polling system leveraging Solana blockchain to ensure secure, transparent, and tamper-proof elections.",
+    tech: ["Next.js", "TypeScript", "Python", "WARP", "Gemini API", "Solana"],
     challenges: [
-      "Kept latency under 120ms p95 while running on GPUs shared across models",
-      "Balanced precision/recall by routing edge cases to a reviewer queue",
+      "Integrating Solana blockchain to our project architecture",
+      "Structuring our logic for security using the wallet signatures",
       "Created a reproducible evaluation harness with shadow deployments",
     ],
     contributions: [
-      "Implemented drift-aware feature store and online inference service",
-      "Designed reviewer dashboard with prioritized queues and auditability",
-      "Automated model rollout with canary + rollback signals tied to business KPIs",
+      "Constructed the polling logic using Python and Solana's framework to our frontend",
+      "Designed a user-friendly interface with Next.js for seamless interaction with the blockchain",
     ],
     links: [
-      { label: "GitHub", href: "https://github.com/ArjaynP/neuratrail" },
-      { label: "Live Demo", href: "https://demo.example.com/neuratrail" },
-      { label: "Devpost", href: "https://devpost.com/software/neuratrail" },
+      { label: "GitHub", href: "https://github.com/satvikgarimella/GovAI" },
+      { label: "Live Demo", href: "https://www.youtube.com/watch?v=DJBun_o0wPo&embeds_referring_euri=https%3A%2F%2Fdevpost.com%2F&source_ve_path=MzY4NDIsMjg2NjY" },
+      { label: "Devpost", href: "https://devpost.com/software/gov-ai-decentralized-polling-system" },
       { label: "Poster", href: "https://example.com/neuratrail/poster" },
       { label: "YouTube", href: "https://youtube.com/watch?v=neuratrail" },
     ],
@@ -55,7 +54,7 @@ export const projects: Project[] = [
     architecture:
       "Edge collectors push to Kafka. A FastAPI service batches events to a TensorFlow model served behind Triton. Scores and metadata land in PostgreSQL for analytics. A Next.js dashboard visualizes incidents and reviewer actions.",
     screenshots: [
-      "/projects/neuratrail-thumb.svg",
+      "/projects/govai.png",
       "/architecture-template.svg",
     ],
     learnings: [
@@ -66,8 +65,9 @@ export const projects: Project[] = [
       "Add RLHF-style ranking of incidents to tighten reviewer priors",
       "Ship lightweight on-device detectors for edge-only deployments",
     ],
-    year: "2025",
+    year: "Nov 2025",
   },
+
   {
     slug: "visionedge",
     title: "VisionEdge",
@@ -148,6 +148,6 @@ export const projects: Project[] = [
       "Add cost-aware routing between providers",
       "Introduce human eval sampling with weekly review",
     ],
-    year: "2025",
+    year: "Nov 2025",
   },
 ];

@@ -149,4 +149,88 @@ export const projects: Project[] = [
     ],
     year: "Dec 2025",
   },
+
+  {
+    slug: "uwo-chatbot",
+    title: "Western University Chatbot",
+    tagline: "An AI-powered assistant for university services",
+    description:
+      "This project involved creating an AI-powered chatbot to assist students and faculty with university-related inquiries and services.",
+    tech: ["Python", "Flask", "Next.js", "TypeScript", "Node.js"],
+    challenges: [
+      "Detect regressions caused by prompt drift and upstream schema changes",
+      "Provide deterministic replay of conversations with feature flags",
+      "Balance latency vs. grounding quality with retriever fallbacks",
+    ],
+    contributions: [
+      "Implemented eval suites covering hallucinations, safety, and factuality",
+      "Designed prompt versioning + approvals, tied to feature flags",
+      "Built dashboards for latency, cost, and retrieval depth per feature",
+    ],
+    links: [
+      { label: "GitHub", href: "https://github.com/ArjaynP/llm-ops-platform" },
+      { label: "Live Demo", href: "https://demo.example.com/llm-ops" },
+      { label: "Paper", href: "https://example.com/llmops/paper" },
+      { label: "YouTube", href: "https://youtube.com/watch?v=llmops" },
+    ],
+    featured: false,
+    problem:
+      "Product teams needed confidence shipping LLM features but lacked evals tied to real user journeys and cost visibility.",
+    overview:
+      "The platform centralizes prompt versions, retrieval configs, and eval results. It triggers guardrails and fallbacks on policy violations and keeps product owners in the loop with dashboards.",
+    architecture:
+      "User inputs flow through a retriever backed by Pinecone, then prompts a hosted LLM with guardrail hooks. Results and costs are logged to PostgreSQL; dashboards live in Next.js.",
+    screenshots: ["/projects/uwo-chatbot.jpg", "/architecture-template.svg"],
+    learnings: [
+      "Eval coverage prevents silent regressions when prompts evolve",
+      "Grounding depth and latency need per-feature SLAs with budgets",
+    ],
+    improvements: [
+      "Add cost-aware routing between providers",
+      "Introduce human eval sampling with weekly review",
+    ],
+    year: "March 2023",
+  },
+
+  {
+    slug: "brescia-hotels",
+    title: "Brescia Norton Hotels",
+    tagline: "Predictive model for hotel booking cancellations",
+    description:
+      "This project involved creating an AI-powered chatbot to assist students and faculty with university-related inquiries and services.",
+    tech: ["Python", "TensorFlow", "Keras"],
+    challenges: [
+      "Detect regressions caused by prompt drift and upstream schema changes",
+      "Provide deterministic replay of conversations with feature flags",
+      "Balance latency vs. grounding quality with retriever fallbacks",
+    ],
+    contributions: [
+      "Implemented eval suites covering hallucinations, safety, and factuality",
+      "Designed prompt versioning + approvals, tied to feature flags",
+      "Built dashboards for latency, cost, and retrieval depth per feature",
+    ],
+    links: [
+      { label: "GitHub", href: "https://github.com/ArjaynP/llm-ops-platform" },
+      { label: "Live Demo", href: "https://demo.example.com/llm-ops" },
+      { label: "Paper", href: "https://example.com/llmops/paper" },
+      { label: "YouTube", href: "https://youtube.com/watch?v=llmops" },
+    ],
+    featured: false,
+    problem:
+      "Product teams needed confidence shipping LLM features but lacked evals tied to real user journeys and cost visibility.",
+    overview:
+      "The platform centralizes prompt versions, retrieval configs, and eval results. It triggers guardrails and fallbacks on policy violations and keeps product owners in the loop with dashboards.",
+    architecture:
+      "User inputs flow through a retriever backed by Pinecone, then prompts a hosted LLM with guardrail hooks. Results and costs are logged to PostgreSQL; dashboards live in Next.js.",
+    screenshots: ["/projects/brescia-hotels.jpg", "/architecture-template.svg"],
+    learnings: [
+      "Eval coverage prevents silent regressions when prompts evolve",
+      "Grounding depth and latency need per-feature SLAs with budgets",
+    ],
+    improvements: [
+      "Add cost-aware routing between providers",
+      "Introduce human eval sampling with weekly review",
+    ],
+    year: "March 2023",
+  },
 ];

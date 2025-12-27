@@ -24,7 +24,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "neuratrail",
+    slug: "govai",
     title: "Gov AI",
     tagline: "Decentralized Polling System using Blockchain Technology Solana",
     description:
@@ -43,7 +43,6 @@ export const projects: Project[] = [
       { label: "GitHub", href: "https://github.com/satvikgarimella/GovAI" },
       { label: "Live Demo", href: "https://www.youtube.com/watch?v=DJBun_o0wPo&embeds_referring_euri=https%3A%2F%2Fdevpost.com%2F&source_ve_path=MzY4NDIsMjg2NjY" },
       { label: "Devpost", href: "https://devpost.com/software/gov-ai-decentralized-polling-system" },
-      { label: "Poster", href: "https://example.com/neuratrail/poster" },
       { label: "YouTube", href: "https://youtube.com/watch?v=neuratrail" },
     ],
     featured: true,
@@ -69,12 +68,12 @@ export const projects: Project[] = [
   },
 
   {
-    slug: "visionedge",
-    title: "VisionEdge",
-    tagline: "Vision transformer pipeline for production CV",
+    slug: "detective-ai",
+    title: "Detective AI",
+    tagline: "Designed to detect silent quality degradation",
     description:
       "Productionized a vision transformer pipeline with active learning, on-the-fly augmentations, and GPU-aware batching across microservices.",
-    tech: ["Next.js", "TypeScript", "PyTorch", "CUDA", "Redis", "gRPC", "Terraform"],
+    tech: ["Next.js", "TypeScript", "DataDog"],
     challenges: [
       "Kept throughput >250 FPS with dynamic batching and GPU utilization >80%",
       "Reduced label noise via active learning and model disagreement scores",
@@ -98,7 +97,7 @@ export const projects: Project[] = [
       "VisionEdge stitches together ingest, selection, training, and serving. It uses disagreement-based active learning to request fresh labels and keeps deployment predictable with shadow evals.",
     architecture:
       "Frames land in S3; metadata in Redis. A PyTorch inference service exposes gRPC, fronted by a load balancer. Next.js renders dashboards for model health and labeling queues.",
-    screenshots: ["/projects/visionedge-thumb.svg", "/architecture-template.svg"],
+    screenshots: ["/projects/detective-ai.jpg", "/architecture-template.svg"],
     learnings: [
       "GPU-aware batching beats naive autoscaling for latency/throughput targets",
       "Disagreement sampling surfaces edge cases faster than entropy alone",
@@ -107,15 +106,15 @@ export const projects: Project[] = [
       "Add synthetic data generation for rare classes",
       "Introduce lightweight mobile inference for offline sites",
     ],
-    year: "2024",
+    year: "Dec 2025",
   },
   {
-    slug: "llm-ops-platform",
-    title: "LLM Ops Platform",
-    tagline: "Evaluation-first platform for grounded LLM features",
+    slug: "project-pit-crew",
+    title: "Project Pit Crew",
+    tagline: "Evaluating issues with LLMs using Jira-integrated platform",
     description:
       "Built an evaluation harness, prompt registry, and guardrails for production LLM features with automatic regression detection.",
-    tech: ["Next.js", "TypeScript", "Node.js", "OpenAI", "Pinecone", "Prisma", "PostgreSQL"],
+    tech: ["Jira", "Python", "Node.js", "Next.js", "Pinecone", "Prisma", "PostgreSQL"],
     challenges: [
       "Detect regressions caused by prompt drift and upstream schema changes",
       "Provide deterministic replay of conversations with feature flags",
@@ -139,7 +138,7 @@ export const projects: Project[] = [
       "The platform centralizes prompt versions, retrieval configs, and eval results. It triggers guardrails and fallbacks on policy violations and keeps product owners in the loop with dashboards.",
     architecture:
       "User inputs flow through a retriever backed by Pinecone, then prompts a hosted LLM with guardrail hooks. Results and costs are logged to PostgreSQL; dashboards live in Next.js.",
-    screenshots: ["/projects/llmops-thumb.svg", "/architecture-template.svg"],
+    screenshots: ["/projects/project-pit-crew.jpg", "/architecture-template.svg"],
     learnings: [
       "Eval coverage prevents silent regressions when prompts evolve",
       "Grounding depth and latency need per-feature SLAs with budgets",
@@ -148,6 +147,6 @@ export const projects: Project[] = [
       "Add cost-aware routing between providers",
       "Introduce human eval sampling with weekly review",
     ],
-    year: "Nov 2025",
+    year: "Dec 2025",
   },
 ];

@@ -56,7 +56,7 @@ export default function Home() {
           <div className="absolute inset-4 rounded-full bg-gradient-to-br from-teal-400/20 via-indigo-400/20 to-pink-400/20 blur-2xl" />
           <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900 shadow-xl shadow-slate-900/40">
             <Image
-              src="/headshot.svg"
+              src="/headshot.png"
               alt="Portrait"
               width={420}
               height={420}

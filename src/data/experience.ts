@@ -27,11 +27,12 @@ export const experiences: Experience[] = [
     company: "Western Baja Racing",
     timeframe: "Sept 2025 — Present",
     summary:
-      "Built infra that balanced experimentation speed with reliability for product teams shipping ML features.",
+      "Designed a material inventory management system to optimize resource allocation and reduce waste",
     highlights: [
-      "Shipped feature store with drift monitoring and alerting",
-      "Introduced golden datasets + replay to prevent regressions",
-      "Mentored engineers on production ML best practices",
+      "Member of the Electronics and Telemetry Team, competing in Baja Racing competitions across North America",
+      "Design and develop a material inventory management web app for all subsystems to request parts from in-stock items, local manufacturers, or online vendors",
+      "Implement the front end in React and Tailwind CSS, including request forms, part search, and status views to streamline ordering and approval workflow",
+      "Plan and build backend APIs in Node.js with a MySQL database to track inventory levels, suppliers, and purchase history, containerized with Docker for a consistent dev environment",
     ],
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Docker", "SQL"],
   },
@@ -40,11 +41,12 @@ export const experiences: Experience[] = [
     company: "Western Formula Racing",
     timeframe: "Sept 2025 — Present",
     summary:
-      "Prototyped and delivered CV + NLP features for enterprise customers.",
+      "Developed, reviewed, and tested the debug log console on the dashboard for real-time vehicle telemetry monitoring",
     highlights: [
-      "Delivered vision pipeline that improved defect detection by 18%",
-      "Owned data labeling pipeline and vendor QA",
-      "Collaborated with PMs to translate research into shipped features",
+      "Member of the Data Acquisition (DAQ) & Software Team, competing in Formula Racing competitions across North America",
+      "Review and test C++ firmware for the driver dashboard, identifying bugs and improving code readability and maintainability",
+      "Contribute to the front-end development of the team’s car data logger, building interfaces to display and organize run and sensor data for engineers",
+      "Collaborate with other hardware teams to ensure dashboard and data-logging features integrate cleanly with the car’s existing systems",
     ],
     tech: ["C++", "Python", "MongoDB"],
   },

@@ -100,8 +100,8 @@ export default function Home() {
       <section id="skills" className="space-y-6">
         <SectionHeader
           eyebrow="Skills"
-          title="Stacks I build with"
-          description="Full-stack ML: data, modeling, infra, and front-end polish."
+          title="Technologies That I Use"
+          description="What I use to deliver robust AI/ML systems and full-stack applications."
         />
         <SkillsGrid />
       </section>

@@ -14,9 +14,9 @@ export function ContactFooter() {
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="text-sm uppercase tracking-[0.15em] text-teal-200/80">Contact</p>
-          <p className="text-lg font-semibold text-white">Let\'s collaborate</p>
+          <p className="text-lg font-semibold text-white">Let&apos;s Collaborate</p>
           <p className="max-w-xl text-sm text-slate-300">
-            I enjoy shipping ML features end-to-end—research, data, infra, and product polish.
+            I enjoy connecting with like-minded professionals and exploring new opportunities. Whether you have a project in mind, want to discuss ideas, or simply wish to say hello, feel free to reach out!
           </p>
         </div>
         <div className="flex flex-wrap gap-3 text-sm font-semibold">

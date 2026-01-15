@@ -1,11 +1,11 @@
 export const skillGroups = [
   {
     title: "Languages",
-    items: ["TypeScript", "Python", "Go", "SQL", "Bash"],
+    items: ["TypeScript", "Python", "Go", "SQL", "Bash", "Java", "C++", "Scala", "R", "Perl"],
   },
   {
     title: "ML / AI",
-    items: ["PyTorch", "TensorFlow", "OpenAI APIs", "Hugging Face", "ONNX"],
+    items: ["PyTorch", "TensorFlow", "OpenAI APIs", "scikit-learn"],
   },
   {
     title: "Data & Infra",

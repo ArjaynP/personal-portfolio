@@ -47,11 +47,11 @@ export const projects: Project[] = [
     ],
     featured: true,
     problem:
-      "Product teams struggled to trust anomaly alerts because models drifted and dashboards lacked context. False positives were noisy and true positives arrived too late for on-call responders.",
+      "Governments and organizations face challenges in conducting secure and transparent elections, often plagued by fraud and lack of trust.",
     overview:
-      "NeuraTrail ingests telemetry streams, enriches events with domain features, scores anomalies in real-time, and routes uncertain cases to a reviewer queue. Feedback fine-tunes thresholds and retraining recipes.",
+      "Gov AI leverages Solana blockchain to create a decentralized polling system that ensures election integrity through immutability and transparency.",
     architecture:
-      "Edge collectors push to Kafka. A FastAPI service batches events to a TensorFlow model served behind Triton. Scores and metadata land in PostgreSQL for analytics. A Next.js dashboard visualizes incidents and reviewer actions.",
+      "The system consists of a Next.js frontend for user interaction, a Python backend for polling logic, and Solana blockchain for secure vote recording and verification.",
     screenshots: [
       "/projects/govai.png",
       "/architecture-template.svg",

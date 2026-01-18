@@ -180,7 +180,7 @@ export const projects: Project[] = [
       "The platform centralizes prompt versions, retrieval configs, and eval results. It triggers guardrails and fallbacks on policy violations and keeps product owners in the loop with dashboards.",
     architecture:
       "User inputs flow through a retriever backed by Pinecone, then prompts a hosted LLM with guardrail hooks. Results and costs are logged to PostgreSQL; dashboards live in Next.js.",
-    screenshots: ["/projects/argainz-gym-app.jpg", "/architecture-template.svg"],
+    screenshots: ["/projects/argainz-gym-app.png", "/architecture-template.svg"],
     learnings: [
       "Eval coverage prevents silent regressions when prompts evolve",
       "Grounding depth and latency need per-feature SLAs with budgets",
@@ -189,7 +189,7 @@ export const projects: Project[] = [
       "Add cost-aware routing between providers",
       "Introduce human eval sampling with weekly review",
     ],
-    year: "Jan 2025",
+    year: "Jan 2025", 
   },
 
   {

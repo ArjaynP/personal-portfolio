@@ -49,14 +49,7 @@ export function Navbar() {
             >
               {link.label}
             </Link>
-          ))}
-          <Link
-            href="/#contact"
-            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-          >
-            Contact
-          </Link>
-        </div>
+          ))}</div>
 
         {/* Mobile Menu Button */}
         <button
@@ -88,13 +81,6 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/#contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-            >
-              Contact
-            </Link>
           </div>
         </div>
       )}

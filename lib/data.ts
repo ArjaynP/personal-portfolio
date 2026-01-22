@@ -163,33 +163,61 @@ export const experiences: Experience[] = [
     achievements: [
       "Improved equipment booking efficiency by 30% through a custom-built full-stack platform using React, Node.js, Express, and SQL/NoSQL databases",
     ],
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"]
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "NextAuth.js"]
   },
   {
     id: "exp-2",
-    company: "AI Startup",
-    role: "AI Software Engineer",
-    duration: "2021 - 2023",
+    company: "Western Baja Racing",
+    role: "Full Stack Developer",
+    duration: "Sept. 2025 - Present",
     description: "Full-stack ML development for an AI-powered analytics platform serving enterprise clients.",
     achievements: [
       "Designed and implemented RAG system achieving 95% retrieval accuracy",
       "Built real-time anomaly detection system reducing false positives by 40%",
       "Architected microservices infrastructure handling 100K+ concurrent users"
     ],
-    techStack: ["Python", "TensorFlow", "FastAPI", "PostgreSQL"]
+    techStack: ["Next.js", "TypeScript", "Docker", "NoSQL"]
   },
   {
     id: "exp-3",
-    company: "Research Lab",
-    role: "Research Assistant",
-    duration: "2019 - 2021",
+    company: "Western Formula Racing",
+    role: "Embedded Systems Developer",
+    duration: "Sept. 2025 - Present",
     description: "Conducted research in deep learning and computer vision, publishing papers at top venues.",
     achievements: [
       "Published 2 papers at top-tier ML conferences",
       "Developed novel architecture improving SOTA by 15%",
       "Contributed to open-source ML frameworks"
     ],
-    techStack: ["Python", "PyTorch", "CUDA", "Linux"]
+    techStack: ["C++", "React.js", "MongoDB", "Tailwind CSS"]
+  },
+
+  {
+    id: "exp-4",
+    company: "Western AI",
+    role: "Embedded Systems Developer",
+    duration: "Sept. 2022 - Apr. 2023",
+    description: "Conducted research in deep learning and computer vision, publishing papers at top venues.",
+    achievements: [
+      "Published 2 papers at top-tier ML conferences",
+      "Developed novel architecture improving SOTA by 15%",
+      "Contributed to open-source ML frameworks"
+    ],
+    techStack: ["C++", "React.js", "MongoDB", "Tailwind CSS"]
+  },
+
+  {
+    id: "exp-5",
+    company: "Western University",
+    role: "Computer Vision Developer",
+    duration: "Jan. 2022 - Apr. 2022",
+    description: "Conducted research in deep learning and computer vision, publishing papers at top venues.",
+    achievements: [
+      "Published 2 papers at top-tier ML conferences",
+      "Developed novel architecture improving SOTA by 15%",
+      "Contributed to open-source ML frameworks"
+    ],
+    techStack: ["C++", "React.js", "MongoDB", "Tailwind CSS"]
   }
 ];
 

@@ -8,7 +8,7 @@ const _inter = Inter({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Your Name | AI/ML Software Engineer',
+  title: 'Home | Arjayn Piratheeparatnam',
   description: 'AI/ML Software Engineer building intelligent systems and innovative solutions. View my projects, experience, and skills.',
   generator: 'v0.app',
   icons: {

@@ -71,11 +71,6 @@ export default function ProjectsPage() {
                       />
                     )}
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-6xl font-mono text-primary/20">
-                        {project.title.charAt(0)}
-                      </div>
-                    </div>
                     {/* Category Badge */}
                     <Badge variant="secondary" className="absolute top-4 left-4">
                       {project.category}

@@ -131,9 +131,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         {/* Project Image */}
         <section className="pb-12">
           <div className="mx-auto max-w-4xl px-6">
-            <div className="aspect-video rounded-lg bg-secondary/50 border border-border/50 flex items-center justify-center">
-              <div className="text-8xl font-mono text-primary/20">{project.title.charAt(0)}</div>
-            </div>
+            <div className="aspect-video rounded-lg bg-secondary/50 border border-border/50" />
           </div>
         </section>
 

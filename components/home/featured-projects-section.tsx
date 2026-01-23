@@ -47,11 +47,6 @@ export function FeaturedProjectsSection() {
                   />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-4xl font-mono text-primary/30">
-                    {project.title.charAt(0)}
-                  </div>
-                </div>
                 {/* Category Badge */}
                 <Badge
                   variant="secondary"

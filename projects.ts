@@ -53,7 +53,7 @@ export const projects: Project[] = [
     architecture:
       "The system consists of a Next.js frontend for user interaction, a Python backend for polling logic, and Solana blockchain for secure vote recording and verification.",
     screenshots: [
-      "/projects/govai.png",
+      "/govai.png",
       "/architecture-template.svg",
     ],
     learnings: [
@@ -180,7 +180,7 @@ export const projects: Project[] = [
       "The platform centralizes prompt versions, retrieval configs, and eval results. It triggers guardrails and fallbacks on policy violations and keeps product owners in the loop with dashboards.",
     architecture:
       "User inputs flow through a retriever backed by Pinecone, then prompts a hosted LLM with guardrail hooks. Results and costs are logged to PostgreSQL; dashboards live in Next.js.",
-    screenshots: ["/projects/argainz-gym-app.png", "/architecture-template.svg"],
+    screenshots: ["/argainz-gym-app.png", "/architecture-template.svg"],
     learnings: [
       "Eval coverage prevents silent regressions when prompts evolve",
       "Grounding depth and latency need per-feature SLAs with budgets",

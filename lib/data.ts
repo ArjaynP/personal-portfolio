@@ -38,14 +38,14 @@ export interface Skill {
 
 export const projects: Project[] = [
   {
-    id: "neural-vision",
-    title: "Neural Vision API",
+    id: "detective-ai",
+    title: "Detective AI",
     shortDescription: "Real-time computer vision API for object detection and image classification using custom-trained models.",
     fullDescription: "A production-ready REST API that provides real-time computer vision capabilities including object detection, image classification, and scene understanding. Built to handle high throughput with sub-100ms latency.",
     problemStatement: "Many businesses need computer vision capabilities but lack the ML infrastructure and expertise to build and deploy models at scale.",
     techStack: ["Python", "PyTorch", "FastAPI", "Docker", "AWS", "Redis"],
-    thumbnail: "/projects/neural-vision.jpg",
-    screenshots: ["/projects/neural-vision-1.jpg", "/projects/neural-vision-2.jpg"],
+    thumbnail: "/detective-ai.png",
+    screenshots: ["/projects/detective-ai-1.jpg", "/projects/detective-ai-2.jpg"],
     challenges: [
       { challenge: "Achieving sub-100ms inference latency", solution: "Implemented model quantization and TensorRT optimization, reducing inference time by 60%" },
       { challenge: "Handling concurrent requests at scale", solution: "Designed async processing pipeline with Redis queue and horizontal scaling" }
@@ -57,8 +57,8 @@ export const projects: Project[] = [
     category: "Machine Learning"
   },
   {
-    id: "llm-assistant",
-    title: "Enterprise LLM Assistant",
+    id: "project-pit-crew",
+    title: "Project Pit Crew",
     shortDescription: "RAG-powered AI assistant for enterprise document search and question answering with fine-tuned embeddings.",
     fullDescription: "An intelligent document assistant that uses Retrieval Augmented Generation to provide accurate answers from large document repositories. Features custom embedding models and hybrid search.",
     problemStatement: "Enterprises struggle to extract insights from vast document repositories, with employees spending hours searching for information.",
@@ -76,13 +76,13 @@ export const projects: Project[] = [
     category: "AI/NLP"
   },
   {
-    id: "predictive-analytics",
-    title: "Predictive Analytics Platform",
+    id: "gov-ai",
+    title: "Gov Ai: Decentralized Polling System",
     shortDescription: "End-to-end ML platform for time series forecasting and anomaly detection in IoT sensor data.",
     fullDescription: "A comprehensive analytics platform that ingests IoT sensor data, detects anomalies in real-time, and provides accurate forecasts for predictive maintenance.",
     problemStatement: "Manufacturing companies lose millions annually due to unplanned equipment failures and inefficient maintenance schedules.",
     techStack: ["Python", "TensorFlow", "Apache Kafka", "InfluxDB", "Grafana", "Kubernetes"],
-    thumbnail: "/projects/predictive-analytics.jpg",
+    thumbnail: "/govai.png",
     screenshots: ["/projects/predictive-analytics-1.jpg"],
     challenges: [
       { challenge: "Processing high-velocity sensor data streams", solution: "Built streaming pipeline with Kafka and optimized batch processing" },
@@ -95,14 +95,37 @@ export const projects: Project[] = [
     category: "Data Engineering"
   },
   {
-    id: "autonomous-drone",
-    title: "Autonomous Drone Navigation",
+    id: "argainz-gym-app",
+    title: "Argainz Gym App",
+    shortDescription: "Mobile-friendly app that builds personalized workout routines in a few steps with clean, fast UI.",
+    fullDescription: "Built an intuitive fitness companion that guides users through creating customized workout plans, pairing a lightweight AI helper with a streamlined React front-end.",
+    problemStatement: "Beginners struggle to assemble effective routines without guidance, leading to inconsistent training and drop-off.",
+    techStack: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+    thumbnail: "/argainz-gym-app.png",
+    screenshots: ["/argainz-gym-app.png"],
+    challenges: [
+      { challenge: "Keeping the flow to three clear steps", solution: "Iterated on UI copy and progressive disclosure to reduce friction." },
+      { challenge: "Responsive design for mobile-first users", solution: "Used Tailwind utility patterns and device testing to ensure consistent layouts." }
+    ],
+    whatYouLearned: ["Designing concise onboarding flows", "Building responsive UIs with Tailwind", "Balancing simplicity with flexibility in form design"],
+    futureGoals: ["Add workout history and streak tracking", "Integrate wearable data for auto-adjusted plans", "Ship offline mode for gym connectivity dead zones"],
+    links: {
+      github: "https://github.com/ArjaynP/llm-ops-platform",
+      live: "https://demo.example.com/llm-ops",
+      youtube: "https://youtube.com/watch?v=llmops"
+    },
+    featured: true,
+    category: "Web App"
+  },
+  {
+    id: "western-baja-inventory-manager",
+    title: "Western Baja Inventory Manager",
     shortDescription: "Deep reinforcement learning system for autonomous drone navigation in complex environments.",
     fullDescription: "A research project implementing deep RL algorithms for autonomous drone navigation, including obstacle avoidance and path planning in dynamic environments.",
     problemStatement: "Autonomous navigation in unknown and dynamic environments remains a key challenge for robotics and drone applications.",
     techStack: ["Python", "PyTorch", "ROS", "OpenAI Gym", "Unity ML-Agents", "C++"],
-    thumbnail: "/projects/autonomous-drone.jpg",
-    screenshots: ["/projects/autonomous-drone-1.jpg"],
+    thumbnail: "/projects/western-baja-inventory-manager.jpg",
+    screenshots: ["/projects/western-baja-inventory-manager-1.jpg"],
     challenges: [
       { challenge: "Sim-to-real transfer gap", solution: "Implemented domain randomization and progressive training curriculum" },
       { challenge: "Sample efficiency in complex environments", solution: "Combined model-based planning with model-free RL" }
@@ -114,8 +137,8 @@ export const projects: Project[] = [
     category: "Robotics"
   },
   {
-    id: "medical-imaging",
-    title: "Medical Imaging Diagnostics",
+    id: "brescia-norton-hotels",
+    title: "Brescia Norton Hotels",
     shortDescription: "CNN-based diagnostic tool for detecting abnormalities in chest X-rays with explainable AI.",
     fullDescription: "A deep learning system that assists radiologists by detecting potential abnormalities in chest X-rays and providing visual explanations for its predictions.",
     problemStatement: "Radiologist shortage and increasing imaging volumes create delays in diagnosis, particularly in underserved areas.",
@@ -133,14 +156,14 @@ export const projects: Project[] = [
     category: "Healthcare AI"
   },
   {
-    id: "recommendation-engine",
-    title: "Personalized Recommendation Engine",
+    id: "uwo-chatbot",
+    title: "Western University Chatbot",
     shortDescription: "Hybrid recommendation system combining collaborative filtering with content-based approaches.",
     fullDescription: "A scalable recommendation engine that provides personalized content suggestions using a hybrid approach of collaborative filtering, content-based methods, and contextual bandits.",
     problemStatement: "Generic recommendations fail to capture individual preferences, leading to poor user engagement and missed opportunities.",
     techStack: ["Python", "Spark", "TensorFlow Recommenders", "Redis", "PostgreSQL", "GraphQL"],
-    thumbnail: "/projects/recommendation-engine.jpg",
-    screenshots: ["/projects/recommendation-engine-1.jpg"],
+    thumbnail: "/projects/uwo-chatbot.jpg",
+    screenshots: ["/projects/uwo-chatbot-1.jpg"],
     challenges: [
       { challenge: "Cold start problem for new users", solution: "Implemented hybrid approach with content-based fallback and active learning" },
       { challenge: "Real-time recommendation serving", solution: "Built two-stage retrieval and ranking system with caching" }

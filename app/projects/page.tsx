@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ExternalLink, Github, Youtube, FileText } from "lucide-react";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -59,6 +60,17 @@ export default function ProjectsPage() {
                 >
                   {/* Thumbnail */}
                   <div className="aspect-video bg-secondary/50 relative overflow-hidden">
+                    {project.thumbnail && (
+                      <Image
+                        src={project.thumbnail}
+                        alt={`${project.title} thumbnail`}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                        priority={project.featured}
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-6xl font-mono text-primary/20">
                         {project.title.charAt(0)}

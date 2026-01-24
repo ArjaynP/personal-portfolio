@@ -251,7 +251,9 @@ export const skills: Skill[] = [
   { name: "JavaScript", category: "languages" },
   { name: "C++", category: "languages" },
   { name: "SQL", category: "languages" },
-  { name: "Rust", category: "languages" },
+  { name: "PostgreSQL", category: "languages" },
+  { name: "NoSQL", category: "languages" },
+  { name: "R", category: "languages" },
   // ML Frameworks
   { name: "PyTorch", category: "ml" },
   { name: "TensorFlow", category: "ml" },

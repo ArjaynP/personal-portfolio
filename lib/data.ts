@@ -77,7 +77,7 @@ export const projects: Project[] = [
   },
   {
     id: "gov-ai",
-    title: "Gov Ai: Decentralized Polling System",
+    title: "Gov AI: Decentralized Polling System",
     shortDescription: "End-to-end ML platform for time series forecasting and anomaly detection in IoT sensor data.",
     fullDescription: "A comprehensive analytics platform that ingests IoT sensor data, detects anomalies in real-time, and provides accurate forecasts for predictive maintenance.",
     problemStatement: "Manufacturing companies lose millions annually due to unplanned equipment failures and inefficient maintenance schedules.",
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     futureGoals: ["Add federated learning support", "Implement AutoML for model selection", "Add natural language querying"],
     links: { github: "#", paper: "#" },
     featured: true,
-    category: "Data Engineering"
+    category: "FinTech"
   },
   {
     id: "argainz-gym-app",
@@ -110,16 +110,16 @@ export const projects: Project[] = [
     whatYouLearned: ["Designing concise onboarding flows", "Building responsive UIs with Tailwind", "Balancing simplicity with flexibility in form design"],
     futureGoals: ["Add workout history and streak tracking", "Integrate wearable data for auto-adjusted plans", "Ship offline mode for gym connectivity dead zones"],
     links: {
-      github: "https://github.com/ArjaynP/llm-ops-platform",
+      github: "https://github.com/ArjaynP/react-workout-app",
       live: "https://demo.example.com/llm-ops",
       youtube: "https://youtube.com/watch?v=llmops"
     },
     featured: true,
-    category: "Web App"
+    category: "Sports Tech"
   },
   {
     id: "western-baja-inventory-manager",
-    title: "Western Baja Inventory Manager",
+    title: "WBR Inventory Manager",
     shortDescription: "Deep reinforcement learning system for autonomous drone navigation in complex environments.",
     fullDescription: "A research project implementing deep RL algorithms for autonomous drone navigation, including obstacle avoidance and path planning in dynamic environments.",
     problemStatement: "Autonomous navigation in unknown and dynamic environments remains a key challenge for robotics and drone applications.",
@@ -134,7 +134,7 @@ export const projects: Project[] = [
     futureGoals: ["Deploy on physical drone hardware", "Add multi-agent coordination", "Implement vision-based navigation"],
     links: { github: "#", youtube: "#", paper: "#" },
     featured: true,
-    category: "Robotics"
+    category: "Web App"
   },
   {
     id: "brescia-norton-hotels",
@@ -153,7 +153,7 @@ export const projects: Project[] = [
     futureGoals: ["Add multi-modal fusion with patient history", "Implement federated learning for privacy", "Expand to CT scan analysis"],
     links: { github: "#", devpost: "#" },
     featured: true,
-    category: "Healthcare AI"
+    category: "Machine Learning"
   },
   {
     id: "uwo-chatbot",
@@ -282,8 +282,7 @@ export const socialLinks = {
   github: "https://github.com/ArjaynP",
   linkedin: "https://www.linkedin.com/in/arjayn-piratheeparatnam-390a721ab/",
   instagram: "https://instagram.com/arjaynpratheep",
-
-  
+  devpost: "#",
 };
 
 export const personalInfo = {

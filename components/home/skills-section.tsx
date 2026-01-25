@@ -11,21 +11,21 @@ const skillCategories = [
   },
   {
     key: "ml" as const,
-    label: "ML & AI",
+    label: "ML Frameworks",
     icon: Cpu,
-    description: "Machine learning frameworks and tools",
+    description: "Machine learning frameworks and libraries",
   },
   {
     key: "frameworks" as const,
     label: "Frameworks",
     icon: Layers,
-    description: "Web and application frameworks",
+    description: "Web and Application frameworks",
   },
   {
     key: "tools" as const,
-    label: "Tools & Infrastructure",
+    label: "Developer Tools",
     icon: Wrench,
-    description: "DevOps and development tools",
+    description: "Tools that enhance my development workflow",
   },
 ];
 
@@ -37,7 +37,7 @@ export function SkillsSection() {
         <div className="space-y-2 mb-12">
           <h2 className="text-3xl font-bold tracking-tight">Skills & Technologies</h2>
           <p className="text-muted-foreground">
-            Technologies and tools I use to build intelligent systems.
+            Technologies and tools that I use.
           </p>
         </div>
 

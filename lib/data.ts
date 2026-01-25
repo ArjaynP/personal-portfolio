@@ -254,7 +254,7 @@ export const skills: Skill[] = [
   { name: "PostgreSQL", category: "languages" },
   { name: "NoSQL", category: "languages" },
   { name: "R", category: "languages" },
-  // ML Frameworks
+  // ML Libraries
   { name: "PyTorch", category: "ml" },
   { name: "TensorFlow", category: "ml" },
   { name: "Scikit-learn", category: "ml" },
@@ -268,13 +268,14 @@ export const skills: Skill[] = [
   { name: "Node.js", category: "frameworks" },
   { name: "Django", category: "frameworks" },
   { name: "Flask", category: "frameworks" },
-  // Tools
+  // Developer Tools
   { name: "Docker", category: "tools" },
-  { name: "Kubernetes", category: "tools" },
-  { name: "AWS", category: "tools" },
-  { name: "Git", category: "tools" },
-  { name: "PostgreSQL", category: "tools" },
-  { name: "Redis", category: "tools" },
+  { name: "GitLab", category: "tools" },
+  { name: "VSCode", category: "tools" },
+  { name: "PyCharm", category: "tools" },
+  { name: "IntelliJ IDEA", category: "tools" },
+  { name: "Eclipse", category: "tools" },
+  { name: "Linux", category: "tools" },
 ];
 
 export const socialLinks = {

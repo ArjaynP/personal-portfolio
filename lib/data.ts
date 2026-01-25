@@ -143,7 +143,7 @@ export const projects: Project[] = [
     fullDescription: "A deep learning system that assists radiologists by detecting potential abnormalities in chest X-rays and providing visual explanations for its predictions.",
     problemStatement: "Radiologist shortage and increasing imaging volumes create delays in diagnosis, particularly in underserved areas.",
     techStack: ["Python", "PyTorch", "MONAI", "FastAPI", "React", "DICOM"],
-    thumbnail: "/projects/medical-imaging.jpg",
+    thumbnail: "/brescia-norton-hotels-logo.png",
     screenshots: ["/projects/medical-imaging-1.jpg"],
     challenges: [
       { challenge: "Building trust with explainable predictions", solution: "Implemented Grad-CAM and attention visualization for model interpretability" },

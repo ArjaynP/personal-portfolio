@@ -25,7 +25,7 @@ export function Navbar() {
           aria-label="Go to home"
         >
           <Image
-            src="/ap-logo-icon-6.png"
+            src="/ap-logo-icon-5.png"
             alt="AP logo"
             width={64}
             height={64}

@@ -63,7 +63,7 @@ export const projects: Project[] = [
     fullDescription: "An intelligent document assistant that uses Retrieval Augmented Generation to provide accurate answers from large document repositories. Features custom embedding models and hybrid search.",
     problemStatement: "Enterprises struggle to extract insights from vast document repositories, with employees spending hours searching for information.",
     techStack: ["Python", "LangChain", "OpenAI", "Pinecone", "Next.js", "PostgreSQL"],
-    thumbnail: "/projects/llm-assistant.jpg",
+    thumbnail: "/project-pit-crew.png",
     screenshots: ["/projects/llm-assistant-1.jpg"],
     challenges: [
       { challenge: "Improving retrieval accuracy for domain-specific content", solution: "Fine-tuned embedding model on domain data, achieving 40% improvement in retrieval accuracy" },
@@ -162,7 +162,7 @@ export const projects: Project[] = [
     fullDescription: "A scalable recommendation engine that provides personalized content suggestions using a hybrid approach of collaborative filtering, content-based methods, and contextual bandits.",
     problemStatement: "Generic recommendations fail to capture individual preferences, leading to poor user engagement and missed opportunities.",
     techStack: ["Python", "Spark", "TensorFlow Recommenders", "Redis", "PostgreSQL", "GraphQL"],
-    thumbnail: "/projects/uwo-chatbot.jpg",
+    thumbnail: "/uwo-chatbot-icon.png",
     screenshots: ["/projects/uwo-chatbot-1.jpg"],
     challenges: [
       { challenge: "Cold start problem for new users", solution: "Implemented hybrid approach with content-based fallback and active learning" },

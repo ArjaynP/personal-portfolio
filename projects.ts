@@ -108,6 +108,7 @@ export const projects: Project[] = [
     ],
     year: "Dec 2025",
   },
+  
   {
     slug: "project-pit-crew",
     title: "Project Pit Crew",

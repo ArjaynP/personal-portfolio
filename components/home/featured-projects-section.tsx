@@ -41,7 +41,7 @@ export function FeaturedProjectsSection() {
                     src={project.thumbnail}
                     alt={`${project.title} thumbnail`}
                     fill
-                    className="object-contain"
+                    className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
                     priority={project.featured}
                   />

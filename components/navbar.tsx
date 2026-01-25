@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -21,19 +20,17 @@ export function Navbar() {
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link
           href="/"
-          className="flex items-center gap-2 text-lg font-semibold tracking-tight hover:text-primary transition-colors"
+          className="group flex items-center gap-2 text-lg font-semibold tracking-tight transition-colors"
           aria-label="Go to home"
         >
-          <Image
-            src="/ap-logo-icon-5.png"
-            alt="AP logo"
-            width={64}
-            height={64}
-            className="h-16 w-16"
-            priority
-          />
+          <div className="flex items-center justify-center h-10 w-10 rounded-xl bg-primary/10 border border-primary/20 group-hover:bg-primary/20 group-hover:border-primary/40 transition-all duration-300">
+            <span className="text-lg font-bold text-primary tracking-tighter">AP</span>
+          </div>
+          <span className="hidden sm:inline-block font-bold text-lg text-foreground/80 group-hover:text-primary transition-colors">
+            Arjayn
+          </span>
         </Link>
-
+        
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (

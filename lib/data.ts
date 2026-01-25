@@ -218,7 +218,7 @@ export const experiences: Experience[] = [
   {
     id: "exp-4",
     company: "Western AI",
-    role: "Embedded Systems Developer",
+    role: "AI Software Developer",
     duration: "Sept. 2022 - Apr. 2023",
     description: "Conducted research in deep learning and computer vision, publishing papers at top venues.",
     achievements: [

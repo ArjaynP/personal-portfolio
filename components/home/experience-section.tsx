@@ -51,8 +51,8 @@ export function ExperienceSection() {
                     </span>
 
                     <div>
-                      <h3 className="text-xl font-semibold">{exp.role}</h3>
-                      <p className="text-muted-foreground">{exp.company}</p>
+                      <h3 className="text-xl font-semibold">{exp.company}</h3>
+                      <p className="text-muted-foreground">{exp.role}</p>
                     </div>
 
                     <p className="text-sm text-muted-foreground leading-relaxed">

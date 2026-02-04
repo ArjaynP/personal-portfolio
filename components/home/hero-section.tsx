@@ -55,14 +55,14 @@ export function HeroSection() {
 
           {/* Profile Image / Visual */}
           <div className="relative hidden lg:flex items-center justify-center">
-            <div className="relative w-80 h-80">
+            <div className="relative w-96 h-96 lg:w-[30rem] lg:h-[30rem]">
               {/* Decorative rings */}
               <div className="absolute inset-0 rounded-full border border-border/50 animate-pulse" />
               <div className="absolute inset-4 rounded-full border border-primary/20" />
               <div className="absolute inset-8 rounded-full border border-primary/30" />
               
               {/* Center content */}
-              <div className="absolute inset-12 rounded-full bg-card flex items-center justify-center border border-border overflow-hidden">
+              <div className="absolute inset-6 rounded-full bg-card flex items-center justify-center border border-border overflow-hidden">
                 <Image
                     src="/top_pick.jpg"
                     alt={personalInfo.name}

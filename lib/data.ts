@@ -218,7 +218,7 @@ export const experiences: Experience[] = [
   {
     id: "exp-4",
     company: "Western AI",
-    role: "AI Software Developer",
+    role: "Technical Project Lead",
     duration: "Sept. 2022 - Apr. 2023",
     description: "Conducted research in deep learning and computer vision, publishing papers at top venues.",
     achievements: [
@@ -291,5 +291,5 @@ export const personalInfo = {
   title: "AI/ML Software Engineer",
   tagline: "Building intelligent systems that solve real-world problems",
   bio: "I'm a passionate AI/ML engineer focused on building production-ready machine learning systems. I love tackling complex problems at the intersection of software engineering and artificial intelligence, from computer vision to natural language processing.",
-  resumeUrl: "#",
+  resumeUrl: "/arjayn-piratheeparatnam.pdf",
 };

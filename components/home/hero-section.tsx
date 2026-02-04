@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, FileText, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { personalInfo } from "@/lib/data";
@@ -61,11 +62,14 @@ export function HeroSection() {
               <div className="absolute inset-8 rounded-full border border-primary/30" />
               
               {/* Center content */}
-              <div className="absolute inset-12 rounded-full bg-card flex items-center justify-center border border-border">
-                <div className="text-center space-y-2">
-                  <div className="text-4xl font-bold text-primary font-mono">{"<AI/>"}</div>
-                  <div className="text-xs text-muted-foreground uppercase tracking-widest">Engineer</div>
-                </div>
+              <div className="absolute inset-12 rounded-full bg-card flex items-center justify-center border border-border overflow-hidden">
+                <Image
+                    src="/top_pick.jpg"
+                    alt={personalInfo.name}
+                    fill
+                    className="object-cover"
+                    priority
+                />
               </div>
             </div>
           </div>

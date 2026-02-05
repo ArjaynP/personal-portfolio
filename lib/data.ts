@@ -3,7 +3,7 @@ export interface Project {
   title: string;
   shortDescription: string;
   fullDescription: string;
-  problemStatement: string;
+  pitchStatement: string;
   techStack: string[];
   thumbnail: string;
   screenshots: string[];
@@ -42,7 +42,7 @@ export const projects: Project[] = [
     title: "Detective AI",
     shortDescription: "Real-time computer vision API for object detection and image classification using custom-trained models.",
     fullDescription: "A production-ready REST API that provides real-time computer vision capabilities including object detection, image classification, and scene understanding. Built to handle high throughput with sub-100ms latency.",
-    problemStatement: "Many businesses need computer vision capabilities but lack the ML infrastructure and expertise to build and deploy models at scale.",
+    pitchStatement: "Many businesses need computer vision capabilities but lack the ML infrastructure and expertise to build and deploy models at scale.",
     techStack: ["Python", "PyTorch", "FastAPI", "Docker", "AWS", "Redis"],
     thumbnail: "/detective-ai.png",
     screenshots: ["/projects/detective-ai-1.jpg", "/projects/detective-ai-2.jpg"],
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     title: "Project Pit Crew",
     shortDescription: "RAG-powered AI assistant for enterprise document search and question answering with fine-tuned embeddings.",
     fullDescription: "An intelligent document assistant that uses Retrieval Augmented Generation to provide accurate answers from large document repositories. Features custom embedding models and hybrid search.",
-    problemStatement: "Enterprises struggle to extract insights from vast document repositories, with employees spending hours searching for information.",
+    pitchStatement: "Enterprises struggle to extract insights from vast document repositories, with employees spending hours searching for information.",
     techStack: ["Python", "LangChain", "OpenAI", "Pinecone", "Next.js", "PostgreSQL"],
     thumbnail: "/project-pit-crew.png",
     screenshots: ["/projects/llm-assistant-1.jpg"],
@@ -80,8 +80,8 @@ export const projects: Project[] = [
     title: "Gov AI: Decentralized Polling System",
     shortDescription: "End-to-end ML platform for time series forecasting and anomaly detection in IoT sensor data.",
     fullDescription: "A comprehensive analytics platform that ingests IoT sensor data, detects anomalies in real-time, and provides accurate forecasts for predictive maintenance.",
-    problemStatement: "Manufacturing companies lose millions annually due to unplanned equipment failures and inefficient maintenance schedules.",
-    techStack: ["Python", "TensorFlow", "Apache Kafka", "InfluxDB", "Grafana", "Kubernetes"],
+    pitchStatement: "We built a voting system you never have to trust, because you can verify it yourself. Every vote is signed, public, and tamper-proof. No admins, no rigging, no hidden results",
+    techStack: ["TypeScript", "Next.js", "Python FastAPI", "Solana", "Rust"],
     thumbnail: "/govai.png",
     screenshots: ["/projects/predictive-analytics-1.jpg"],
     challenges: [
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     ],
     whatYouLearned: ["Stream processing architecture", "Time series forecasting techniques", "MLOps best practices"],
     futureGoals: ["Add federated learning support", "Implement AutoML for model selection", "Add natural language querying"],
-    links: { github: "#", paper: "#" },
+    links: { github: "https://github.com/ArjaynP/GovAI", youtube: "https://www.youtube.com/watch?v=DJBun_o0wPo", devpost: "https://devpost.com/software/gov-ai-decentralized-polling-system" },
     featured: true,
     category: "FinTech"
   },
@@ -99,7 +99,7 @@ export const projects: Project[] = [
     title: "Argainz Gym App",
     shortDescription: "Mobile-friendly app that builds personalized workout routines in a few steps with clean, fast UI.",
     fullDescription: "Built an intuitive fitness companion that guides users through creating customized workout plans, pairing a lightweight AI helper with a streamlined React front-end.",
-    problemStatement: "Beginners struggle to assemble effective routines without guidance, leading to inconsistent training and drop-off.",
+    pitchStatement: "Beginners struggle to assemble effective routines without guidance, leading to inconsistent training and drop-off.",
     techStack: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
     thumbnail: "/argainz-gym-app.png",
     screenshots: ["/argainz-gym-app.png"],
@@ -111,7 +111,6 @@ export const projects: Project[] = [
     futureGoals: ["Add workout history and streak tracking", "Integrate wearable data for auto-adjusted plans", "Ship offline mode for gym connectivity dead zones"],
     links: {
       github: "https://github.com/ArjaynP/react-workout-app",
-      live: "https://demo.example.com/llm-ops",
       youtube: "https://youtube.com/watch?v=llmops"
     },
     featured: true,
@@ -122,7 +121,7 @@ export const projects: Project[] = [
     title: "WBR Inventory Manager",
     shortDescription: "Deep reinforcement learning system for autonomous drone navigation in complex environments.",
     fullDescription: "A research project implementing deep RL algorithms for autonomous drone navigation, including obstacle avoidance and path planning in dynamic environments.",
-    problemStatement: "Autonomous navigation in unknown and dynamic environments remains a key challenge for robotics and drone applications.",
+    pitchStatement: "Autonomous navigation in unknown and dynamic environments remains a key challenge for robotics and drone applications.",
     techStack: ["Python", "PyTorch", "ROS", "OpenAI Gym", "Unity ML-Agents", "C++"],
     thumbnail: "/wbrlogo.png",
     screenshots: ["/projects/western-baja-inventory-manager-1.jpg"],
@@ -132,7 +131,7 @@ export const projects: Project[] = [
     ],
     whatYouLearned: ["Deep reinforcement learning algorithms", "Robotics simulation and control", "Sim-to-real transfer techniques"],
     futureGoals: ["Deploy on physical drone hardware", "Add multi-agent coordination", "Implement vision-based navigation"],
-    links: { github: "#", youtube: "#", paper: "#" },
+    links: { github: "", youtube: "#", paper: "#" },
     featured: true,
     category: "Web App"
   },
@@ -141,7 +140,7 @@ export const projects: Project[] = [
     title: "Brescia Norton Hotels",
     shortDescription: "CNN-based diagnostic tool for detecting abnormalities in chest X-rays with explainable AI.",
     fullDescription: "A deep learning system that assists radiologists by detecting potential abnormalities in chest X-rays and providing visual explanations for its predictions.",
-    problemStatement: "Radiologist shortage and increasing imaging volumes create delays in diagnosis, particularly in underserved areas.",
+    pitchStatement: "Radiologist shortage and increasing imaging volumes create delays in diagnosis, particularly in underserved areas.",
     techStack: ["Python", "PyTorch", "MONAI", "FastAPI", "React", "DICOM"],
     thumbnail: "/brescia-norton-hotels-logo.png",
     screenshots: ["/projects/medical-imaging-1.jpg"],
@@ -160,7 +159,7 @@ export const projects: Project[] = [
     title: "Western University Chatbot",
     shortDescription: "Hybrid recommendation system combining collaborative filtering with content-based approaches.",
     fullDescription: "A scalable recommendation engine that provides personalized content suggestions using a hybrid approach of collaborative filtering, content-based methods, and contextual bandits.",
-    problemStatement: "Generic recommendations fail to capture individual preferences, leading to poor user engagement and missed opportunities.",
+    pitchStatement: "Generic recommendations fail to capture individual preferences, leading to poor user engagement and missed opportunities.",
     techStack: ["Python", "Spark", "TensorFlow Recommenders", "Redis", "PostgreSQL", "GraphQL"],
     thumbnail: "/uwo-chatbot-icon.png",
     screenshots: ["/projects/uwo-chatbot-1.jpg"],
@@ -220,13 +219,13 @@ export const experiences: Experience[] = [
     company: "Western AI",
     role: "Technical Project Lead",
     duration: "Sept. 2022 - Apr. 2023",
-    description: "Conducted research in deep learning and computer vision, publishing papers at top venues.",
+    description: "Developed a ",
     achievements: [
       "Published 2 papers at top-tier ML conferences",
       "Developed novel architecture improving SOTA by 15%",
       "Contributed to open-source ML frameworks"
     ],
-    techStack: ["C++", "React.js", "MongoDB", "Tailwind CSS"]
+    techStack: ["Python", "Flask", "NLP", "TypeScript", "Next.js"]
   },
 
   {
@@ -240,7 +239,7 @@ export const experiences: Experience[] = [
       "Developed novel architecture improving SOTA by 15%",
       "Contributed to open-source ML frameworks"
     ],
-    techStack: ["C++", "React.js", "MongoDB", "Tailwind CSS"]
+    techStack: ["Python", "TensorFlow", "Keras", "OpenCV"]
   }
 ];
 

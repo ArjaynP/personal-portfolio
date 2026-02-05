@@ -145,11 +145,11 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 <p className="text-muted-foreground leading-relaxed">{project.fullDescription}</p>
               </div>
 
-              {/* Problem Statement */}
+              {/* Pitch Statement */}
               <div className="space-y-4">
-                <h2 className="text-2xl font-semibold">Problem Statement</h2>
+                <h2 className="text-2xl font-semibold">Pitch Statement</h2>
                 <div className="p-6 rounded-lg bg-card border border-border/50">
-                  <p className="text-muted-foreground leading-relaxed">{project.problemStatement}</p>
+                  <p className="text-muted-foreground leading-relaxed">{project.pitchStatement}</p>
                 </div>
               </div>
 
@@ -214,7 +214,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 <ul className="space-y-2">
                   {project.whatYouLearned.map((learning, index) => (
                     <li key={index} className="flex items-start gap-3 text-muted-foreground">
-                      <span className="text-primary mt-1.5">•</span>
+                      <span className="text-primary mt-1.5">→</span>
                       <span>{learning}</span>
                     </li>
                   ))}

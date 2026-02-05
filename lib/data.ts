@@ -131,7 +131,7 @@ export const projects: Project[] = [
     ],
     whatYouLearned: ["Deep reinforcement learning algorithms", "Robotics simulation and control", "Sim-to-real transfer techniques"],
     futureGoals: ["Deploy on physical drone hardware", "Add multi-agent coordination", "Implement vision-based navigation"],
-    links: { github: "", youtube: "#", paper: "#" },
+    links: { github: "https://github.com/WesternBajaRacing/Baja-InventoryManager"},
     featured: true,
     category: "Web App"
   },
@@ -150,7 +150,7 @@ export const projects: Project[] = [
     ],
     whatYouLearned: ["Medical image processing pipelines", "Explainable AI techniques", "Healthcare AI regulations and best practices"],
     futureGoals: ["Add multi-modal fusion with patient history", "Implement federated learning for privacy", "Expand to CT scan analysis"],
-    links: { github: "#", devpost: "#" },
+    links: { github: "#", devpost: "https://devpost.com/software/team-27-brescia-norton-hotel/" },
     featured: true,
     category: "Machine Learning"
   },

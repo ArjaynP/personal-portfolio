@@ -123,7 +123,7 @@ export const projects: Project[] = [
     fullDescription: "A research project implementing deep RL algorithms for autonomous drone navigation, including obstacle avoidance and path planning in dynamic environments.",
     pitchStatement: "Autonomous navigation in unknown and dynamic environments remains a key challenge for robotics and drone applications.",
     techStack: ["Python", "PyTorch", "ROS", "OpenAI Gym", "Unity ML-Agents", "C++"],
-    thumbnail: "/wbrlogo.png",
+    thumbnail: "/wbr-logo.jpeg",
     screenshots: ["/projects/western-baja-inventory-manager-1.jpg"],
     challenges: [
       { challenge: "Sim-to-real transfer gap", solution: "Implemented domain randomization and progressive training curriculum" },

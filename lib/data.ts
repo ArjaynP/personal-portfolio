@@ -192,7 +192,7 @@ export const projects: Project[] = [
     futureGoals: ["Add reinforcement learning for long-term optimization", "Implement cross-domain recommendations", "Add causal inference for debiasing"],
     links: { github: "#", live: "#" },
     featured: false,
-    category: "Machine Learning"
+    category: "Sports Tech"
   }
 ];
 

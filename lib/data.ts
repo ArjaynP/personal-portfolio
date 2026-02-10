@@ -25,6 +25,7 @@ export interface Experience {
   id: string;
   company: string;
   companyLogo?: string;
+  companyEmoji?: string;
   role: string;
   duration: string;
   description: string;
@@ -181,8 +182,8 @@ export const projects: Project[] = [
     fullDescription: "A scalable recommendation engine that provides personalized content suggestions using a hybrid approach of collaborative filtering, content-based methods, and contextual bandits.",
     pitchStatement: "Generic recommendations fail to capture individual preferences, leading to poor user engagement and missed opportunities.",
     techStack: ["Python", "Spark", "TensorFlow Recommenders", "Redis", "PostgreSQL", "GraphQL"],
-    thumbnail: "/the-athlete-insider.png",
-    screenshots: ["/the-athlete-insider.png"],
+    thumbnail: "/athlete-insider-banner.png",
+    screenshots: ["/athlete-insider-banner.png"],
     challenges: [
       { challenge: "Cold start problem for new users", solution: "Implemented hybrid approach with content-based fallback and active learning" },
       { challenge: "Real-time recommendation serving", solution: "Built two-stage retrieval and ranking system with caching" }
@@ -199,7 +200,7 @@ export const experiences: Experience[] = [
   {
     id: "exp-1",
     company: "EMRC Labs",
-    companyLogo: "/westernuniversity_logo.jpeg",
+    companyEmoji: "🔬",
     role: "AI/ML & Computer Vision Researcher | Full-Stack Developer",
     duration: "Nov. 2025 — Present",
     description: "Built and maintained a full-stack internal web platform using React, Node.js, Express, and SQL/NoSQL to centralize equipment booking, tracking, and administrative workflows for research staff and students",

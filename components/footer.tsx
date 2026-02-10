@@ -45,7 +45,7 @@ export function Footer() {
               <a href="/projects" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Projects
               </a>
-              <a href={personalInfo.resumeUrl} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href={personalInfo.resumeUrl} className="text-sm text-muted-foreground hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
             </nav>
@@ -56,7 +56,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold text-foreground">Connect</h3>
             <div className="flex items-center gap-4">
               <a
-                href={socialLinks.github}
+                href={"https://github.com/ArjaynP"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-secondary text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors"
@@ -65,7 +65,7 @@ export function Footer() {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href={socialLinks.linkedin}
+                href={"https://www.linkedin.com/in/arjayn-piratheeparatnam-390a721ab/"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-secondary text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors"
@@ -74,7 +74,7 @@ export function Footer() {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href={socialLinks.devpost}
+                href={"https://devpost.com/ArjaynP?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-secondary text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors"
@@ -83,7 +83,7 @@ export function Footer() {
                 <DevpostIcon className="h-5 w-5" />
               </a>
               <a
-                href={socialLinks.instagram}
+                href={"https://www.instagram.com/arjaynpratheep"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-secondary text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors"

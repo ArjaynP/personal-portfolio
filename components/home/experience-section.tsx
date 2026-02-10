@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { experiences } from "@/lib/data";
 
@@ -51,7 +52,19 @@ export function ExperienceSection() {
                     </span>
 
                     <div>
-                      <h3 className="text-xl font-semibold">{exp.company}</h3>
+                      <div className="flex items-center gap-3 mb-1">
+                        {exp.companyLogo && (
+                          <div className="relative w-10 h-10 rounded-lg overflow-hidden bg-background border border-border flex-shrink-0">
+                            <Image
+                              src={exp.companyLogo}
+                              alt={`${exp.company} logo`}
+                              fill
+                              className="object-contain p-1"
+                            />
+                          </div>
+                        )}
+                        <h3 className="text-xl font-semibold">{exp.company}</h3>
+                      </div>
                       <p className="text-muted-foreground">{exp.role}</p>
                     </div>
 

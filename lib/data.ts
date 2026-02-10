@@ -24,6 +24,7 @@ export interface Project {
 export interface Experience {
   id: string;
   company: string;
+  companyLogo?: string;
   role: string;
   duration: string;
   description: string;
@@ -179,6 +180,7 @@ export const experiences: Experience[] = [
   {
     id: "exp-1",
     company: "EMRC Labs",
+    companyLogo: "/company-logos/emrc-labs.png",
     role: "AI/ML & Computer Vision Researcher | Full-Stack Developer",
     duration: "Nov. 2025 — Present",
     description: "Developing a full-stack application that details the lab, as well as a private portal for lab employees to book equipment",
@@ -190,6 +192,7 @@ export const experiences: Experience[] = [
   {
     id: "exp-2",
     company: "Western Baja Racing",
+    companyLogo: "/company-logos/western-baja.png",
     role: "Full Stack Developer",
     duration: "Sept. 2025 - Present",
     description: "Full-stack ML development for an AI-powered analytics platform serving enterprise clients.",
@@ -203,6 +206,7 @@ export const experiences: Experience[] = [
   {
     id: "exp-3",
     company: "Western Formula Racing",
+    companyLogo: "/company-logos/western-formula.png",
     role: "Embedded Systems Developer",
     duration: "Sept. 2025 - Present",
     description: "Conducted research in deep learning and computer vision, publishing papers at top venues.",
@@ -217,6 +221,7 @@ export const experiences: Experience[] = [
   {
     id: "exp-4",
     company: "Western AI",
+    companyLogo: "/company-logos/western-ai.png",
     role: "Technical Project Lead",
     duration: "Sept. 2022 - Apr. 2023",
     description: "Developed a ",
@@ -231,6 +236,7 @@ export const experiences: Experience[] = [
   {
     id: "exp-5",
     company: "Western University",
+    companyLogo: "/westernuniversity_logo.jpeg",
     role: "Computer Vision Developer",
     duration: "Jan. 2022 - Apr. 2022",
     description: "Conducted research in deep learning and computer vision, publishing papers at top venues.",

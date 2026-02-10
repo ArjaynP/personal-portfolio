@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { experiences } from "@/lib/data";
 import { Calendar, Briefcase, TrendingUp } from "lucide-react";
@@ -38,9 +39,21 @@ export function ExperienceSection() {
                     <div className="flex-1">
                       <div className="flex items-start gap-3 mb-3">
                         <div className="mt-1">
-                          <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                            <Briefcase className="w-6 h-6 text-primary" />
-                          </div>
+                          {exp.companyLogo ? (
+                            <div className="w-12 h-12 rounded-xl overflow-hidden border border-border flex-shrink-0 group-hover:border-primary/50 transition-colors">
+                              <Image
+                                src={exp.companyLogo}
+                                alt={`${exp.company} logo`}
+                                width={48}
+                                height={48}
+                                className="object-cover w-full h-full"
+                              />
+                            </div>
+                          ) : (
+                            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                              <Briefcase className="w-6 h-6 text-primary" />
+                            </div>
+                          )}
                         </div>
                         <div>
                           <h3 className="text-2xl font-bold mb-1 group-hover:text-primary transition-colors">

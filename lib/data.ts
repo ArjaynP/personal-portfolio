@@ -114,7 +114,7 @@ export const projects: Project[] = [
       github: "https://github.com/ArjaynP/react-workout-app",
       youtube: "https://youtube.com/watch?v=llmops"
     },
-    featured: true,
+    featured: false,
     category: "Sports Tech"
   },
   {
@@ -133,7 +133,7 @@ export const projects: Project[] = [
     whatYouLearned: ["Deep reinforcement learning algorithms", "Robotics simulation and control", "Sim-to-real transfer techniques"],
     futureGoals: ["Deploy on physical drone hardware", "Add multi-agent coordination", "Implement vision-based navigation"],
     links: { github: "https://github.com/WesternBajaRacing/Baja-InventoryManager"},
-    featured: true,
+    featured: false,
     category: "Web App"
   },
   {
@@ -152,7 +152,7 @@ export const projects: Project[] = [
     whatYouLearned: ["Medical image processing pipelines", "Explainable AI techniques", "Healthcare AI regulations and best practices"],
     futureGoals: ["Add multi-modal fusion with patient history", "Implement federated learning for privacy", "Expand to CT scan analysis"],
     links: { github: "#", devpost: "https://devpost.com/software/team-27-brescia-norton-hotel/" },
-    featured: true,
+    featured: false,
     category: "Machine Learning"
   },
   {
@@ -173,6 +173,25 @@ export const projects: Project[] = [
     links: { github: "#", live: "#" },
     featured: false,
     category: "Machine Learning"
+  },
+  {
+    id: "the Athlete Insider",
+    title: "The Athlete Insider",
+    shortDescription: "Hybrid recommendation system combining collaborative filtering with content-based approaches.",
+    fullDescription: "A scalable recommendation engine that provides personalized content suggestions using a hybrid approach of collaborative filtering, content-based methods, and contextual bandits.",
+    pitchStatement: "Generic recommendations fail to capture individual preferences, leading to poor user engagement and missed opportunities.",
+    techStack: ["Python", "Spark", "TensorFlow Recommenders", "Redis", "PostgreSQL", "GraphQL"],
+    thumbnail: "/the-athlete-insider.png",
+    screenshots: ["/the-athlete-insider.png"],
+    challenges: [
+      { challenge: "Cold start problem for new users", solution: "Implemented hybrid approach with content-based fallback and active learning" },
+      { challenge: "Real-time recommendation serving", solution: "Built two-stage retrieval and ranking system with caching" }
+    ],
+    whatYouLearned: ["Recommendation system architectures", "A/B testing for ML systems", "Balancing exploration vs exploitation"],
+    futureGoals: ["Add reinforcement learning for long-term optimization", "Implement cross-domain recommendations", "Add causal inference for debiasing"],
+    links: { github: "#", live: "#" },
+    featured: false,
+    category: "Machine Learning"
   }
 ];
 
@@ -183,39 +202,38 @@ export const experiences: Experience[] = [
     companyLogo: "/westernuniversity_logo.jpeg",
     role: "AI/ML & Computer Vision Researcher | Full-Stack Developer",
     duration: "Nov. 2025 — Present",
-    description: "Developing a full-stack application that details the lab, as well as a private portal for lab employees to book equipment",
+    description: "Built and maintained a full-stack internal web platform using React, Node.js, Express, and SQL/NoSQL to centralize equipment booking, tracking, and administrative workflows for research staff and students",
     achievements: [
-      "Improved equipment booking efficiency by 30% through a custom-built full-stack platform using React, Node.js, Express, and SQL/NoSQL databases",
+      "Developed an admin dashboard to monitor 50+ equipment assets, user activity, and equipment status, enabling faster operational decisions and improved accountability",
+      "Conducted applied AI/ML research in computer vision and image processing, working with SLAM, ROS, and Gazebo for robotics and mobility modeling"
     ],
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "NextAuth.js"]
+    techStack: ["React", "Node.js", "Express", "SQL", "NoSQL", "SLAM", "ROS", "Gazebo"]
   },
   {
     id: "exp-2",
     company: "Western Baja Racing",
     companyLogo: "/western_baja_racing_logo.jpeg",
-    role: "Full Stack Developer",
+    role: "Full Stack Developer - Electronics & Telemetry",
     duration: "Sept. 2025 - Present",
-    description: "Full-stack ML development for an AI-powered analytics platform serving enterprise clients.",
+    description: "Developed a full-stack inventory management web application using React, Node.js, and MySQL to track $20,000+ worth of parts, suppliers, and purchase history",
     achievements: [
-      "Designed and implemented RAG system achieving 95% retrieval accuracy",
-      "Built real-time anomaly detection system reducing false positives by 40%",
-      "Architected microservices infrastructure handling 100K+ concurrent users"
+      "Built reusable UI components with React and Tailwind CSS to streamline request and approval workflows",
+      "Developed backend APIs in Node.js with a MySQL database to track inventory levels, suppliers, and purchase history, using Docker to ensure consistent development and deployment environments"
     ],
-    techStack: ["Next.js", "TypeScript", "Docker", "NoSQL"]
+    techStack: ["React", "Node.js", "MySQL", "Tailwind CSS", "Docker"]
   },
   {
     id: "exp-3",
     company: "Western Formula Racing",
     companyLogo: "/western_formula_racing_logo.jpeg",
-    role: "Embedded Systems Developer",
+    role: "Embedded Software Developer",
     duration: "Sept. 2025 - Present",
-    description: "Conducted research in deep learning and computer vision, publishing papers at top venues.",
+    description: "Reviewed and tested C++ firmware for the driver dashboard to identify bugs and refactor fragile logic, improving system reliability and long-term maintainability",
     achievements: [
-      "Published 2 papers at top-tier ML conferences",
-      "Developed novel architecture improving SOTA by 15%",
-      "Contributed to open-source ML frameworks"
+      "Developed front-end interfaces for the team's car data logger to visualize run and sensor data, improving engineer access to performance insights and post-run analysis",
+      "Collaborated with hardware teams to integrate dashboard and data-logging features with existing vehicle systems, ensuring reliable real-time data flow and system compatibility"
     ],
-    techStack: ["C++", "React.js", "MongoDB", "Tailwind CSS"]
+    techStack: ["C++", "React", "Embedded Systems"]
   },
 
   {
@@ -224,13 +242,12 @@ export const experiences: Experience[] = [
     companyLogo: "/westernuai_logo.jpeg",
     role: "Technical Project Lead",
     duration: "Sept. 2022 - Apr. 2023",
-    description: "Developed a ",
+    description: "Led a cross-functional team to deliver a prototype 24/7 university FAQ chatbot, defining scope, milestones, and task ownership while contributing to implementation",
     achievements: [
-      "Published 2 papers at top-tier ML conferences",
-      "Developed novel architecture improving SOTA by 15%",
-      "Contributed to open-source ML frameworks"
+      "Contributed to the chatbot's NLP model implementation in PyTorch with BRNN-based intent classification and supported evaluation/testing to improve response accuracy to 80%",
+      "Deployed the embedded chatbot UI on Vercel and validated demo readiness with 200+ test queries"
     ],
-    techStack: ["Python", "Flask", "NLP", "TypeScript", "Next.js"]
+    techStack: ["Python", "PyTorch", "NLP", "React", "Vercel"]
   },
 
   {

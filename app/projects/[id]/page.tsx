@@ -65,7 +65,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   }
 
   const youtubeEmbedUrl = getYoutubeEmbedUrl(project.links.youtube);
-  const architectureImage = project.id === "gov-ai" ? "/govai-architecture-diagram.png" : null;
+  const architectureImage = project.id === "gov-ai" ? "/govai-architecture-diagram-1.png" : null;
 
   return (
     <div className="min-h-screen flex flex-col">

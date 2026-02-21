@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ExternalLink, Github, Youtube, FileText, Award } from "lucide-react";
 import { Navbar } from "@/components/navbar";
@@ -7,6 +8,27 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { projects } from "@/lib/data";
 import type { Metadata } from "next";
+
+function getYoutubeEmbedUrl(url?: string | null) {
+  if (!url) return null;
+
+  try {
+    const parsed = new URL(url);
+    if (parsed.hostname.includes("youtu.be")) {
+      const id = parsed.pathname.replace("/", "");
+      return id ? `https://www.youtube.com/embed/${id}` : null;
+    }
+
+    if (parsed.hostname.includes("youtube.com")) {
+      const id = parsed.searchParams.get("v");
+      return id ? `https://www.youtube.com/embed/${id}` : null;
+    }
+  } catch (error) {
+    console.error("Invalid YouTube URL", error);
+  }
+
+  return null;
+}
 
 interface ProjectPageProps {
   params: Promise<{ id: string }>;
@@ -41,6 +63,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   if (!project) {
     notFound();
   }
+
+  const youtubeEmbedUrl = getYoutubeEmbedUrl(project.links.youtube);
+  const architectureImage = project.id === "gov-ai" ? "/govai-architecture-diagram.png" : null;
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -131,7 +156,19 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         {/* Project Image */}
         <section className="pb-12">
           <div className="mx-auto max-w-4xl px-6">
-            <div className="aspect-video rounded-lg bg-secondary/50 border border-border/50" />
+            {youtubeEmbedUrl ? (
+              <div className="aspect-video rounded-lg overflow-hidden border border-border/50 bg-black">
+                <iframe
+                  src={`${youtubeEmbedUrl}?rel=0`}
+                  title={`${project.title} demo`}
+                  className="h-full w-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+            ) : (
+              <div className="aspect-video rounded-lg bg-secondary/50 border border-border/50" />
+            )}
           </div>
         </section>
 
@@ -165,14 +202,29 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 </div>
               </div>
 
-              {/* Architecture Diagram Placeholder */}
+              {/* Architecture Diagram */}
               <div className="space-y-4">
                 <h2 className="text-2xl font-semibold">Architecture</h2>
-                <div className="aspect-[2/1] rounded-lg bg-card border border-border/50 flex items-center justify-center">
-                  <div className="text-center text-muted-foreground">
-                    <div className="text-4xl mb-2 font-mono opacity-50">{"[Architecture Diagram]"}</div>
-                    <p className="text-sm">System architecture visualization</p>
-                  </div>
+                <div className="aspect-[2/1] rounded-lg border border-border/50 bg-card overflow-hidden">
+                  {architectureImage ? (
+                    <div className="relative h-full w-full">
+                      <Image
+                        src={architectureImage}
+                        alt={`${project.title} architecture diagram`}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1024px"
+                        priority
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex h-full items-center justify-center text-muted-foreground">
+                      <div className="text-center">
+                        <div className="text-4xl mb-2 font-mono opacity-50">{"[Architecture Diagram]"}</div>
+                        <p className="text-sm">System architecture visualization</p>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
 

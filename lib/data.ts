@@ -85,14 +85,18 @@ export const projects: Project[] = [
     pitchStatement: "We built a voting system you never have to trust, because you can verify it yourself. Every vote is signed, public, and tamper-proof. No admins, no rigging, no hidden results",
     techStack: ["TypeScript", "Next.js", "Python FastAPI", "Solana", "Rust"],
     thumbnail: "/govai.png",
-    screenshots: ["/projects/predictive-analytics-1.jpg"],
+    screenshots: ["https://www.youtube.com/watch?v=DJBun_o0wPo&embeds_referring_euri=https%3A%2F%2Fdevpost.com%2F&source_ve_path=Mjg2NjY"],
     challenges: [
       { challenge: "Processing high-velocity sensor data streams", solution: "Built streaming pipeline with Kafka and optimized batch processing" },
       { challenge: "Handling concept drift in sensor data", solution: "Implemented online learning with automatic model retraining" }
     ],
     whatYouLearned: ["Stream processing architecture", "Time series forecasting techniques", "MLOps best practices"],
     futureGoals: ["Add federated learning support", "Implement AutoML for model selection", "Add natural language querying"],
-    links: { github: "https://github.com/ArjaynP/GovAI", youtube: "https://www.youtube.com/watch?v=DJBun_o0wPo", devpost: "https://devpost.com/software/gov-ai-decentralized-polling-system" },
+    links: {
+      github: "https://github.com/ArjaynP/GovAI",
+      youtube: "https://www.youtube.com/watch?v=DJBun_o0wPo&embeds_referring_euri=https%3A%2F%2Fdevpost.com%2F&source_ve_path=Mjg2NjY",
+      devpost: "https://devpost.com/software/gov-ai-decentralized-polling-system"
+    },
     featured: true,
     category: "FinTech"
   },

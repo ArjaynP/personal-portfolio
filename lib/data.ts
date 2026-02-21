@@ -80,20 +80,28 @@ export const projects: Project[] = [
   {
     id: "gov-ai",
     title: "Gov AI: Decentralized Polling System",
-    shortDescription: "End-to-end ML platform for time series forecasting and anomaly detection in IoT sensor data.",
-    fullDescription: "A comprehensive analytics platform that ingests IoT sensor data, detects anomalies in real-time, and provides accurate forecasts for predictive maintenance.",
-    pitchStatement: "We built a voting system you never have to trust, because you can verify it yourself. Every vote is signed, public, and tamper-proof. No admins, no rigging, no hidden results",
-    techStack: ["TypeScript", "Next.js", "Python FastAPI", "Solana", "Rust"],
+    shortDescription: "Trustless on-chain polling where every ballot is wallet-signed, publicly auditable, and tamper-proof on Solana.",
+    fullDescription: "Gov AI is a decentralized polling system built on Solana that records every vote on-chain, verifies signatures from connected wallets, and publishes transparent, tamper-proof tallies. The frontend uses Next.js for the voting flow, a FastAPI service orchestrates submissions, and a Rust Solana program enforces the rules on-chain so results can be independently verified by anyone.",
+    pitchStatement: "Polling that you never need to trust—because you can verify it yourself. Every vote is wallet-signed, recorded on-chain, and publicly auditable with no central admin to tamper with results.",
+    techStack: ["TypeScript", "Next.js", "Python FastAPI", "Solana", "Rust", "Anchor"],
     thumbnail: "/govai.png",
     screenshots: ["https://www.youtube.com/watch?v=DJBun_o0wPo&embeds_referring_euri=https%3A%2F%2Fdevpost.com%2F&source_ve_path=Mjg2NjY"],
     challenges: [
-      { challenge: "Processing high-velocity sensor data streams", solution: "Built streaming pipeline with Kafka and optimized batch processing" },
-      { challenge: "Handling concept drift in sensor data", solution: "Implemented online learning with automatic model retraining" }
+      { challenge: "Guaranteeing vote integrity without a central administrator", solution: "Required wallet signatures and verified them in a Solana program so only authenticated ballots are accepted." },
+      { challenge: "Preventing duplicate or replayed votes", solution: "Stored vote state on-chain with unique nonces to reject duplicate submissions and enforce one-vote-per-wallet." }
     ],
-    whatYouLearned: ["Stream processing architecture", "Time series forecasting techniques", "MLOps best practices"],
-    futureGoals: ["Add federated learning support", "Implement AutoML for model selection", "Add natural language querying"],
+    whatYouLearned: [
+      "Building Solana programs with Anchor and verifying wallet signatures",
+      "Designing client flows that keep on-chain and off-chain state consistent",
+      "Creating transparent audit trails that users can independently verify"
+    ],
+    futureGoals: [
+      "Add zero-knowledge proofs for private ballot contents while keeping public tallies",
+      "Ship mobile-first wallet support and QR-based voting flows",
+      "Publish reusable governance and referendum templates on Solana"
+    ],
     links: {
-      github: "https://github.com/ArjaynP/GovAI",
+      github: "https://github.com/satvikgarimella/GovAI",
       youtube: "https://www.youtube.com/watch?v=DJBun_o0wPo&embeds_referring_euri=https%3A%2F%2Fdevpost.com%2F&source_ve_path=Mjg2NjY",
       devpost: "https://devpost.com/software/gov-ai-decentralized-polling-system"
     },

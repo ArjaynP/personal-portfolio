@@ -133,10 +133,10 @@ export const projects: Project[] = [
   {
     id: "western-baja-inventory-manager",
     title: "WBR Inventory Manager",
-    shortDescription: "Deep reinforcement learning system for autonomous drone navigation in complex environments.",
-    fullDescription: "A research project implementing deep RL algorithms for autonomous drone navigation, including obstacle avoidance and path planning in dynamic environments.",
-    pitchStatement: "Autonomous navigation in unknown and dynamic environments remains a key challenge for robotics and drone applications.",
-    techStack: ["Python", "PyTorch", "ROS", "OpenAI Gym", "Unity ML-Agents", "C++"],
+    shortDescription: "Inventory management platform for Western Baja Racing, streamlining part requests, approvals, and faculty ordering for engineering teams.",
+    fullDescription: "WBR Inventory Manager is a web application built for Western University's engineering team, Western Baja Racing. The platform allows subsystems to request parts from inventory or submit new item requests for manufacturing by local suppliers in London, Ontario. Requests are routed to the executive leader for approval, and upon approval, the system auto-generates an email to the engineering faculty coordinator for final ordering and authorization. The platform centralizes inventory tracking, request workflows, and communication, making it easier for student teams to manage parts, streamline approvals, and coordinate with faculty.",
+    pitchStatement: "Engineering teams face complex inventory and ordering workflows, often relying on manual tracking and email chains. WBR Inventory Manager automates part requests, approvals, and faculty communication, saving time and reducing errors for student teams and coordinators.",
+    techStack: ["React", "Node.js", "MySQL", "Tailwind CSS", "Docker"],
     thumbnail: "/wbr-logo.jpeg",
     screenshots: ["/projects/western-baja-inventory-manager-1.jpg"],
     challenges: [

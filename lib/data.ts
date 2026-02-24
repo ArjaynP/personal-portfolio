@@ -152,18 +152,19 @@ export const projects: Project[] = [
   {
     id: "uwo-chatbot",
     title: "Western University Chatbot",
-    shortDescription: "Hybrid recommendation system combining collaborative filtering with content-based approaches.",
-    fullDescription: "A scalable recommendation engine that provides personalized content suggestions using a hybrid approach of collaborative filtering, content-based methods, and contextual bandits.",
-    pitchStatement: "Generic recommendations fail to capture individual preferences, leading to poor user engagement and missed opportunities.",
-    techStack: ["Python", "Spark", "TensorFlow Recommenders", "Redis", "PostgreSQL", "GraphQL"],
+    shortDescription: "AI-powered virtual agent for students to get school-related support and answers 24/7, with a comforting and human-like conversational experience.",
+    fullDescription: "The Western University Chatbot is a virtual agent designed to help students conveniently resolve school-related questions at any time of day. It provides reassuring, comforting, and supportive assistance, answering queries about general information, faculty, and program details. By simulating a natural conversation as if speaking with a real office advisor, the chatbot eliminates the need for students to cut class or schedule meetings with live agents, making support accessible outside school hours. The system leverages advanced NLP and dialogue management to deliver personalized, empathetic responses, ensuring students feel heard and supported.",
+    pitchStatement: "Students often struggle to get timely answers to school-related questions, facing scheduling conflicts or waiting for advisor availability. The Western University Chatbot offers a virtual agent that acts like a real office advisor, providing 24/7 support and making student life more convenient, comfortable, and stress-free.",
+    techStack: ["Python", "PyTorch", "NLP", "React", "Vercel", "TensorFlow", "PostgreSQL"],
     thumbnail: "/uwo-chatbot-icon.png",
     screenshots: ["/projects/uwo-chatbot-1.jpg"],
     challenges: [
-      { challenge: "Cold start problem for new users", solution: "Implemented hybrid approach with content-based fallback and active learning" },
-      { challenge: "Real-time recommendation serving", solution: "Built two-stage retrieval and ranking system with caching" }
+      { challenge: "Delivering empathetic, human-like responses", solution: "Designed custom NLP models and dialogue flows to simulate comforting advisor conversations." },
+      { challenge: "Covering diverse school-related topics", solution: "Built modular intent classification and knowledge base integration for broad coverage." },
+      { challenge: "Ensuring accessibility outside school hours", solution: "Deployed scalable cloud infrastructure for 24/7 availability and fast response times." }
     ],
-    whatYouLearned: ["Recommendation system architectures", "A/B testing for ML systems", "Balancing exploration vs exploitation"],
-    futureGoals: ["Add reinforcement learning for long-term optimization", "Implement cross-domain recommendations", "Add causal inference for debiasing"],
+    whatYouLearned: ["Conversational AI design for empathy and support", "NLP intent classification and dialogue management", "Building accessible student support systems"],
+    futureGoals: ["Expand to more faculty/program-specific knowledge", "Integrate with student portals for personalized help", "Add voice and multi-modal support"],
     links: { github: "https://github.com/ArjaynP/uwo-chatbot", live: "#" },
     featured: false,
     category: "Machine Learning"

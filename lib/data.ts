@@ -54,7 +54,7 @@ export const projects: Project[] = [
     ],
     whatYouLearned: ["Model optimization techniques for production", "Building scalable ML infrastructure", "API design patterns for ML services"],
     futureGoals: ["Add video stream processing", "Implement custom model training pipeline", "Add edge deployment support"],
-    links: { github: "#", live: "#", youtube: "#" },
+    links: { github: "https://github.com/ArjaynP/detective-ai", live: "#", youtube: "#" },
     featured: true,
     category: "Machine Learning"
   },
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     ],
     whatYouLearned: ["RAG system design and optimization", "Embedding model fine-tuning", "Building production LLM applications"],
     futureGoals: ["Add multi-modal document support", "Implement streaming responses", "Add conversation memory"],
-    links: { github: "#", live: "#", devpost: "#" },
+    links: { github: "https://github.com/ArjaynP/project-pit-crew", live: "#", devpost: "#" },
     featured: true,
     category: "AI/NLP"
   },
@@ -164,7 +164,7 @@ export const projects: Project[] = [
     ],
     whatYouLearned: ["Recommendation system architectures", "A/B testing for ML systems", "Balancing exploration vs exploitation"],
     futureGoals: ["Add reinforcement learning for long-term optimization", "Implement cross-domain recommendations", "Add causal inference for debiasing"],
-    links: { github: "#", live: "#" },
+    links: { github: "https://github.com/ArjaynP/uwo-chatbot", live: "#" },
     featured: false,
     category: "Machine Learning"
   },
@@ -183,7 +183,7 @@ export const projects: Project[] = [
     ],
     whatYouLearned: ["Recommendation system architectures", "A/B testing for ML systems", "Balancing exploration vs exploitation"],
     futureGoals: ["Add reinforcement learning for long-term optimization", "Implement cross-domain recommendations", "Add causal inference for debiasing"],
-    links: { github: "#", live: "#" },
+    links: { github: "https://github.com/ArjaynP/theAthleteInsider", live: "#" },
     featured: false,
     category: "Sports Tech"
   }

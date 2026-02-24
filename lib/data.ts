@@ -150,25 +150,6 @@ export const projects: Project[] = [
     category: "Web App"
   },
   {
-    id: "brescia-norton-hotels",
-    title: "Brescia Norton Hotels",
-    shortDescription: "CNN-based diagnostic tool for detecting abnormalities in chest X-rays with explainable AI.",
-    fullDescription: "A deep learning system that assists radiologists by detecting potential abnormalities in chest X-rays and providing visual explanations for its predictions.",
-    pitchStatement: "Radiologist shortage and increasing imaging volumes create delays in diagnosis, particularly in underserved areas.",
-    techStack: ["Python", "PyTorch", "MONAI", "FastAPI", "React", "DICOM"],
-    thumbnail: "/brescia-norton-hotels-logo.png",
-    screenshots: ["/projects/medical-imaging-1.jpg"],
-    challenges: [
-      { challenge: "Building trust with explainable predictions", solution: "Implemented Grad-CAM and attention visualization for model interpretability" },
-      { challenge: "Handling class imbalance in medical data", solution: "Used focal loss and data augmentation strategies" }
-    ],
-    whatYouLearned: ["Medical image processing pipelines", "Explainable AI techniques", "Healthcare AI regulations and best practices"],
-    futureGoals: ["Add multi-modal fusion with patient history", "Implement federated learning for privacy", "Expand to CT scan analysis"],
-    links: { github: "#", devpost: "https://devpost.com/software/team-27-brescia-norton-hotel/" },
-    featured: false,
-    category: "Machine Learning"
-  },
-  {
     id: "uwo-chatbot",
     title: "Western University Chatbot",
     shortDescription: "Hybrid recommendation system combining collaborative filtering with content-based approaches.",

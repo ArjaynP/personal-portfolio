@@ -65,6 +65,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   }
 
   const youtubeEmbedUrl = getYoutubeEmbedUrl(project.links.youtube);
+  const hasLocalScreenshot = Boolean(project.screenshots?.[0]?.startsWith("/"));
+  const mediaImage = hasLocalScreenshot ? project.screenshots[0] : project.thumbnail;
   const architectureImage = project.id === "gov-ai" ? "/govai-architecture-diagram-1.png" : null;
 
   return (
@@ -164,6 +166,17 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   className="h-full w-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
+                />
+              </div>
+            ) : mediaImage ? (
+              <div className="aspect-video rounded-lg overflow-hidden border border-border/50 bg-secondary/50 relative">
+                <Image
+                  src={mediaImage}
+                  alt={`${project.title} preview`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1024px"
+                  priority
                 />
               </div>
             ) : (

@@ -170,7 +170,7 @@ export const projects: Project[] = [
     category: "Machine Learning"
   },
   {
-    id: "the Athlete Insider",
+    id: "the-athlete-insider",
     title: "The Athlete Insider",
     shortDescription: "Hybrid recommendation system combining collaborative filtering with content-based approaches.",
     fullDescription: "A scalable recommendation engine that provides personalized content suggestions using a hybrid approach of collaborative filtering, content-based methods, and contextual bandits.",

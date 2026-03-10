@@ -172,19 +172,19 @@ export const projects: Project[] = [
   {
     id: "the-athlete-insider",
     title: "The Athlete Insider",
-    shortDescription: "Hybrid recommendation system combining collaborative filtering with content-based approaches.",
-    fullDescription: "A scalable recommendation engine that provides personalized content suggestions using a hybrid approach of collaborative filtering, content-based methods, and contextual bandits.",
-    pitchStatement: "Generic recommendations fail to capture individual preferences, leading to poor user engagement and missed opportunities.",
-    techStack: ["Python", "Spark", "TensorFlow Recommenders", "Redis", "PostgreSQL", "GraphQL"],
+    shortDescription: "Sports media platform for NBA/NFL/MLB coverage with live scores, standings, betting insights, fantasy tools, and community interaction.",
+    fullDescription: "The Athlete Insider is a full-stack sports content platform focused on NBA and NFL fans. It combines editorial content, live score surfaces, standings pages, fantasy recommendations, betting views, and community modules (polls, trivia, debates, fan pulse) in one cohesive product. The app uses a Next.js App Router frontend, Prisma + PostgreSQL for structured data, Redis caching for faster repeated API reads, and external sports APIs for live standings/team metadata.",
+    pitchStatement: "Sports fans bounce between multiple fragmented apps for news, standings, fantasy picks, and betting context. The Athlete Insider unifies those workflows into one fast, community-driven destination.",
+    techStack: ["TypeScript", "Next.js", "React", "Tailwind CSS", "Prisma", "PostgreSQL", "Redis", "RapidAPI"],
     thumbnail: "/athlete-insider-banner.png",
     screenshots: ["/athlete-insider-banner.png"],
     challenges: [
-      { challenge: "Cold start problem for new users", solution: "Implemented hybrid approach with content-based fallback and active learning" },
-      { challenge: "Real-time recommendation serving", solution: "Built two-stage retrieval and ranking system with caching" }
+      { challenge: "Normalizing inconsistent third-party sports API response shapes for standings and team metadata", solution: "Added defensive parsing/mapping layers in API utilities and route handlers, with clear fallback/error responses." },
+      { challenge: "Keeping standings and team data responsive without over-hitting external providers", solution: "Implemented Redis-backed caching with TTL-based invalidation for standings and team logo lookups." }
     ],
-    whatYouLearned: ["Recommendation system architectures", "A/B testing for ML systems", "Balancing exploration vs exploitation"],
-    futureGoals: ["Add reinforcement learning for long-term optimization", "Implement cross-domain recommendations", "Add causal inference for debiasing"],
-    links: { github: "https://github.com/ArjaynP/theAthleteInsider", live: "#" },
+    whatYouLearned: ["Designing feature-rich sports products with Next.js App Router", "Building resilient integrations against variable API payloads", "Using Prisma + Redis together for reliable data and faster page experiences"],
+    futureGoals: ["Expand live-data coverage so NFL/MLB standings endpoints are fully productionized", "Add deeper personalization for homepage/feed ranking", "Ship richer analytics dashboards and advanced player/team trend exploration"],
+    links: { github: "https://github.com/ArjaynP/theAthleteInsider", live: "https://v0-the-athlete-insider.vercel.app" },
     featured: false,
     category: "Sports Tech"
   }
